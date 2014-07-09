@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f9f75445_d731c422",
+        "filename": "src/com/android/camera/ui/ModuleSwitcher.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1042691
+      },
+      "writtenOn": "2014-07-09T22:27:54Z",
+      "side": 1,
+      "message": "Please use braces even for single-line if statements to match surrounding code style.",
+      "range": {
+        "startLine": 112,
+        "startChar": 8,
+        "endLine": 113,
+        "endChar": 23
+      },
+      "revId": "123c7658e3f786f94d2f329c6f2bbb2a4954411a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "995e582a_6ad33775",
+        "filename": "src/com/android/camera/ui/ModuleSwitcher.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1042691
+      },
+      "writtenOn": "2014-07-09T22:27:54Z",
+      "side": 1,
+      "message": "Please use braces even for single-line if statements to match surrounding code style.",
+      "range": {
+        "startLine": 121,
+        "startChar": 12,
+        "endLine": 122,
+        "endChar": 25
+      },
+      "revId": "123c7658e3f786f94d2f329c6f2bbb2a4954411a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

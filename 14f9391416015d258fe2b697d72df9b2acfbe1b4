@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f3685504_95b144cb",
+        "filename": "src/com/android/camera/exif/ExifOutputStream.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 1042722
+      },
+      "writtenOn": "2014-08-21T22:20:10Z",
+      "side": 1,
+      "message": "only purpose moving this would be if tags we created in createRequiredIfdAndTag were null -- and the only way that would occur is if we had a mismatch in ExifInterface tag constants and tags we\u0027re adding in createRequiredIfdAndTag. Please elaborate how null tags are being added in your use case.",
+      "revId": "14f9391416015d258fe2b697d72df9b2acfbe1b4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f3685504_d589fc16",
+        "filename": "src/com/android/camera/exif/ExifOutputStream.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 1042722
+      },
+      "writtenOn": "2014-08-21T22:20:10Z",
+      "side": 1,
+      "message": "unnecessary, this should never return null, please elaborate why this was added.",
+      "revId": "14f9391416015d258fe2b697d72df9b2acfbe1b4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

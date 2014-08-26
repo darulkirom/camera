@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9382b917_1010ccb4",
+        "filename": "src/com/android/camera/exif/ExifOutputStream.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 217,
+      "author": {
+        "id": 1006838
+      },
+      "writtenOn": "2014-08-26T06:21:53Z",
+      "side": 1,
+      "message": "In stripNullValueTags, we got data.getAllTags as null which is invalid when accessing getValue on it. We exchanged these 2 lines for confirming mIfdDatas is not empty. As you told, we\u0027d better check why mExifData.getAllTags return null that caused the stripNullValueTags crashes.",
+      "parentUuid": "f3685504_95b144cb",
+      "revId": "14f9391416015d258fe2b697d72df9b2acfbe1b4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f3685504_d589fc16",
         "filename": "src/com/android/camera/exif/ExifOutputStream.java",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2014-08-21T22:20:10Z",
       "side": 1,
       "message": "unnecessary, this should never return null, please elaborate why this was added.",
+      "revId": "14f9391416015d258fe2b697d72df9b2acfbe1b4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9382b917_700f4897",
+        "filename": "src/com/android/camera/exif/ExifOutputStream.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 1006838
+      },
+      "writtenOn": "2014-08-26T06:21:53Z",
+      "side": 1,
+      "message": "We got the data.getAllTags null in the emulator camera. Therefore, we double checked it here. But if the data in mIfdDatas is empty in the getAllTags function, the code still run into \"return null\"? Is any code in other place confused?",
+      "parentUuid": "f3685504_d589fc16",
       "revId": "14f9391416015d258fe2b697d72df9b2acfbe1b4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false

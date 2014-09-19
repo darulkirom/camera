@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5064b799_23c1413c",
+        "filename": "src/com/android/camera/ui/FilmStripGestureRecognizer.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1012548
+      },
+      "writtenOn": "2014-09-19T16:44:22Z",
+      "side": 1,
+      "message": "final float hscroll \u003d event.get.....\nfinal float vscroll \u003d -event.get.....",
+      "range": {
+        "startLine": 70,
+        "startChar": 20,
+        "endLine": 74,
+        "endChar": 76
+      },
+      "revId": "fb212089e889940e30c534383d84d035b5fc356d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d057c7b2_2a36fbf8",
+        "filename": "src/com/android/camera/ui/FilmStripGestureRecognizer.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1012548
+      },
+      "writtenOn": "2014-09-19T16:44:22Z",
+      "side": 1,
+      "message": "This should be one line.",
+      "range": {
+        "startLine": 76,
+        "startChar": 20,
+        "endLine": 77,
+        "endChar": 21
+      },
+      "revId": "fb212089e889940e30c534383d84d035b5fc356d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

@@ -142,6 +142,7 @@ public class CameraSettingsActivity extends FragmentActivity {
         public static final String PREF_LAUNCH_HELP = "pref_launch_help";
         private static final Log.Tag TAG = new Log.Tag("SettingsFragment");
         private static DecimalFormat sMegaPixelFormat = new DecimalFormat("##0.0");
+        private static DecimalFormat sLittleMegaPixelFormat = new DecimalFormat("##0.00");
         private String[] mCamcorderProfileNames;
         private CameraDeviceInfo mInfos;
         private String mPrefKey;
@@ -509,7 +510,14 @@ public class CameraSettingsActivity extends FragmentActivity {
          */
         private String getSizeSummaryString(Size size) {
             Size approximateSize = ResolutionUtil.getApproximateSize(size);
-            String megaPixels = sMegaPixelFormat.format((size.width() * size.height()) / 1e6);
+            String megaPixels;
+
+            if(size.width() * size.height() * 10 >= 1e6) {
+                megaPixels = sMegaPixelFormat.format((size.width() * size.height()) / 1e6);
+            } else {
+                megaPixels = sLittleMegaPixelFormat.format((size.width() * size.height()) / 1e6);
+            }
+
             int numerator = ResolutionUtil.aspectRatioNumerator(approximateSize);
             int denominator = ResolutionUtil.aspectRatioDenominator(approximateSize);
             String result = getResources().getString(

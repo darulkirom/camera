@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e2199973_b345383f",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 274,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2016-02-18T18:36:42Z",
+      "side": 1,
+      "message": "writeFile already returns the length of the file written, so please just use that instead of allocating another object.",
+      "revId": "d558f2b727ae31c9d202f42a3dde761f03e4f7c3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e2199973_d338b4d4",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 274,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2016-02-18T18:36:42Z",
+      "side": 1,
+      "message": "writeFile already returns the size of the file written, so please just use that instead of allocating another object.",
+      "revId": "d558f2b727ae31c9d202f42a3dde761f03e4f7c3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Code-Review+2: Przemyslaw Szczepaniak <pszczepaniak@google.com>
+Verified+1: Paul Duffin <paulduffin@google.com>
+Submitted-by: Paul Duffin <paulduffin@google.com>
+Submitted-at: Thu, 09 Mar 2017 14:00:03 +0000
+Reviewed-on: https://android-review.googlesource.com/347922
+Project: platform/packages/apps/Camera2
+Branch: refs/heads/master

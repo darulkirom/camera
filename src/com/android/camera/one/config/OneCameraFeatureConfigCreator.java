@@ -105,9 +105,29 @@ public class OneCameraFeatureConfigCreator {
                     }
                 }
 
-                // On FULL devices starting with L-MR1 we can run ZSL.
-                if (supportedLevel == CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL_FULL) {
-                    return CaptureSupportLevel.ZSL;
+                // On FULL devices starting with L-MR1 we can run ZSL if private reprocessing
+                // or YUV reprocessing is supported.
+                if (supportedLevel == CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL_FULL
+                        || supportedLevel == CameraCharacteristics.INFO_SUPPORTED_HARDWARE_LEVEL_3) {
+                    boolean supportZsl = false;
+                    int[] capabilities = characteristics
+                            .get(CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES);
+                    int maxNumInputStreams = characteristics
+                            .get(CameraCharacteristics.REQUEST_MAX_NUM_INPUT_STREAMS);
+                    for (int cap: capabilities) {
+                        if ((cap == CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_PRIVATE_REPROCESSING
+                                || cap == CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES_YUV_REPROCESSING)
+                                && maxNumInputStreams != 0) {
+                            supportZsl = true;
+                            break;
+                        }
+                    }
+
+                    if (supportZsl) {
+                        return CaptureSupportLevel.ZSL;
+                    } else {
+                        return CaptureSupportLevel.LIMITED_YUV;
+                    }
                 }
 
                 // On LIMITED devices starting with L-MR1 we run a simple YUV

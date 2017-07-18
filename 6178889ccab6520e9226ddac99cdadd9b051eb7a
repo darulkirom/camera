@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "60a7c927_fbb41401",
+        "filename": "src/com/android/camera/one/v2/photo/PictureTakerFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1060513
+      },
+      "writtenOn": "2017-07-18T17:52:37Z",
+      "side": 1,
+      "message": "Can you use ZSL or STILL_CAPTURE based on device capability here?",
+      "range": {
+        "startLine": 51,
+        "startChar": 29,
+        "endLine": 51,
+        "endChar": 51
+      },
+      "revId": "6178889ccab6520e9226ddac99cdadd9b051eb7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

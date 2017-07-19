@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ffda44b7_88525744",
+        "filename": "src/com/android/camera/one/config/OneCameraFeatureConfigCreator.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1022419
+      },
+      "writtenOn": "2017-07-19T03:20:55Z",
+      "side": 1,
+      "message": "Yes, I\u0027ll upload new patch set.",
+      "parentUuid": "48d679a7_18cdfc32",
+      "range": {
+        "startLine": 113,
+        "startChar": 20,
+        "endLine": 127,
+        "endChar": 21
+      },
+      "revId": "6178889ccab6520e9226ddac99cdadd9b051eb7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a3314930_cabef6e1",
         "filename": "src/com/android/camera/one/v2/photo/PictureTakerFactory.java",
         "patchSetId": 3
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "53216326_c0bcf3f1",
+        "filename": "src/com/android/camera/one/v2/photo/PictureTakerFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1022419
+      },
+      "writtenOn": "2017-07-19T03:20:55Z",
+      "side": 1,
+      "message": "Thanks for your comment. Please see my comment below.",
+      "parentUuid": "a3314930_cabef6e1",
+      "range": {
+        "startLine": 40,
+        "startChar": 38,
+        "endLine": 40,
+        "endChar": 44
+      },
+      "revId": "6178889ccab6520e9226ddac99cdadd9b051eb7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "60a7c927_fbb41401",
         "filename": "src/com/android/camera/one/v2/photo/PictureTakerFactory.java",
         "patchSetId": 3
@@ -59,6 +107,30 @@
       "writtenOn": "2017-07-18T17:52:37Z",
       "side": 1,
       "message": "Can you use ZSL or STILL_CAPTURE based on device capability here?",
+      "range": {
+        "startLine": 51,
+        "startChar": 29,
+        "endLine": 51,
+        "endChar": 51
+      },
+      "revId": "6178889ccab6520e9226ddac99cdadd9b051eb7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c3242878_0686e685",
+        "filename": "src/com/android/camera/one/v2/photo/PictureTakerFactory.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1022419
+      },
+      "writtenOn": "2017-07-19T03:20:55Z",
+      "side": 1,
+      "message": "Thanks for your review.\n\nThere is already a factory class for ZSL mode ZslPictureTakerFactory, and \nZslPictureTakerFactory will be used when the platform supports ZSL.\nTherefore I thought the logic for ZSL is not necessary in this class. Do you agree?",
+      "parentUuid": "60a7c927_fbb41401",
       "range": {
         "startLine": 51,
         "startChar": 29,

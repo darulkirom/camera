@@ -37,6 +37,7 @@
         android:smallScreens="false" />
 
     <application
+android:debuggable="true"
         android:name="com.android.camera.app.CameraApp"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/logo_camera_color_44in48dp"

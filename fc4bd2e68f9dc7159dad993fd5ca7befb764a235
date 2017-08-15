@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c1960875_fca2e8ae",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1003224
+      },
+      "writtenOn": "2017-08-15T16:36:04Z",
+      "side": 1,
+      "message": "ah, crap.",
+      "revId": "fc4bd2e68f9dc7159dad993fd5ca7befb764a235",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

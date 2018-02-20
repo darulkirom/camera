@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eb1d912f_4620d8c1",
+        "filename": "version.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 1074628
+      },
+      "writtenOn": "2018-02-20T21:41:54Z",
+      "side": 1,
+      "message": "This also needs to change",
+      "range": {
+        "startLine": 88,
+        "startChar": 0,
+        "endLine": 88,
+        "endChar": 42
+      },
+      "revId": "9b18433fe8784719216192325eaae16f40e5e619",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

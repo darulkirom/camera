@@ -43,7 +43,7 @@ base_version_build := 002
 #####################################################
 #####################################################
 # Collect automatic version code parameters
-ifneq "" "$(filter eng.%,$(BUILD_NUMBER))"
+ifeq ($(strip $(HAS_BUILD_NUMBER)),false)
   # This is an eng build
   base_version_buildtype := 0
 else

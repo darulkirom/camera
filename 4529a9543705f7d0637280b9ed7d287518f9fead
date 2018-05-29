@@ -1,0 +1,9 @@
+Code-Review+2: Paul Rohde <codelogic@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Verified+1: Charles Zhang <zhangcharles518@gmail.com>
+Autosubmit+1: Eino-Ville Talvala <etalvala@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Tue, 29 May 2018 19:23:54 +0000
+Reviewed-on: https://android-review.googlesource.com/678102
+Project: platform/packages/apps/Camera2
+Branch: refs/heads/master

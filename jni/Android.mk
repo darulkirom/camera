@@ -30,4 +30,6 @@ LOCAL_CFLAGS += -ffast-math -O3 -funroll-loops
 LOCAL_CFLAGS += -Wall -Wextra -Werror
 LOCAL_ARM_MODE := arm
 
+LOCAL_XOM := false
+
 include $(BUILD_SHARED_LIBRARY)

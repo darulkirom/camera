@@ -87,8 +87,15 @@ public class BasicCameraFactory {
             Observable<Boolean> hdrSceneSetting,
             int templateType) {
         RequestTemplate requestTemplate = new RequestTemplate(rootTemplate);
-        requestTemplate.setParam(
-              CaptureRequest.CONTROL_AF_MODE, CaptureRequest.CONTROL_AF_MODE_CONTINUOUS_PICTURE);
+        if (cameraCharacteristics.isAutoFocusSupported()) {
+            requestTemplate.setParam(
+                    CaptureRequest.CONTROL_AF_MODE,
+                    CaptureRequest.CONTROL_AF_MODE_CONTINUOUS_PICTURE);
+        } else {
+            requestTemplate.setParam(
+                    CaptureRequest.CONTROL_AF_MODE,
+                    CaptureRequest.CONTROL_AF_MODE_OFF);
+        }
         requestTemplate.setParam(
               CaptureRequest.CONTROL_AE_MODE, new FlashBasedAEMode(flash, hdrSceneSetting));
         requestTemplate.setParam(

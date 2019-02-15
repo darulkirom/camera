@@ -242,6 +242,20 @@ public class OneCameraCharacteristicsImpl implements OneCameraCharacteristics {
         // Auto-Focus is supported if the device supports one or more AF regions
         return maxAfRegions != null && maxAfRegions > 0;
     }
+    
+    @Override
+    public boolean isContinuousPictureAutoFocusSupported() {
+        int[] availableAfModes =
+                mCameraCharacteristics.get(CameraCharacteristics.CONTROL_AF_AVAILABLE_MODES);
+        boolean continuousPictureAfModeAvailable = false;
+        for (int i = 0; i < availableAfModes.length; i++) {
+            if (availableAfModes[i] == CameraCharacteristics.CONTROL_AF_MODE_CONTINUOUS_PICTURE) {
+                continuousPictureAfModeAvailable = true;
+                break;
+            }
+        }
+        return  isAutoFocusSupported() && continuousPictureAfModeAvailable;
+    }
 
     @Override
     public boolean isAutoExposureSupported() {

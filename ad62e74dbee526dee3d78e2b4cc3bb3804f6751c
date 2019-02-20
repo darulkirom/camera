@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d1e02ef6_0b6cbb33",
+        "filename": "src/com/android/camera/one/v2/common/BasicCameraFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1121338
+      },
+      "writtenOn": "2019-02-20T22:21:20Z",
+      "side": 1,
+      "message": "I could click a picture on the same device(no AF on the front camera) even without this change (since the camera HAL probably ignores the CONTROL_AF_MODE_CONTINUOUS request seeing that it\u0027s invalid).",
+      "range": {
+        "startLine": 90,
+        "startChar": 12,
+        "endLine": 90,
+        "endChar": 56
+      },
+      "revId": "ad62e74dbee526dee3d78e2b4cc3bb3804f6751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

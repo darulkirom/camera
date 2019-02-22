@@ -22,6 +22,30 @@
       "revId": "ad62e74dbee526dee3d78e2b4cc3bb3804f6751c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fb207f14_9fd45b42",
+        "filename": "src/com/android/camera/one/v2/common/BasicCameraFactory.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2019-02-22T21:35:14Z",
+      "side": 1,
+      "message": "unfortunately, it looks like the impl of isAutoFocusSupported is basically \u0027is this a back-facing camera\u0027.  Which isn\u0027t technically correct, even though it\u0027s just about guaranteed to be true.\n\nThat said, having autofocus still doesn\u0027t guarantee CONTINUOUS_FOCUS support (we only mandate AUTO), even though again 99% of devices with autofocus support continuous focus.\n\nSo this should really be checking the list of supported AF modes directly, or some other convenience method if one exists.",
+      "parentUuid": "d1e02ef6_0b6cbb33",
+      "range": {
+        "startLine": 90,
+        "startChar": 12,
+        "endLine": 90,
+        "endChar": 56
+      },
+      "revId": "ad62e74dbee526dee3d78e2b4cc3bb3804f6751c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }

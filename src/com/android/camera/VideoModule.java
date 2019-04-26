@@ -633,6 +633,9 @@ public class VideoModule extends CameraModule
     @Override
     public void onReviewDoneClicked(View v) {
         mIsInReviewMode = false;
+        if (mMediaRecorderRecording) {
+            stopVideoRecording();
+        }
         doReturnToCaller(true);
     }
 

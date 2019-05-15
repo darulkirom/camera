@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "650cce5e_2b6f497f",
+        "filename": "src/com/android/camera/one/OneCameraCharacteristics.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2019-05-15T18:40:04Z",
+      "side": 1,
+      "message": "nit: typo. \"continous\" -\u003e \"continuous\"",
+      "revId": "eaf57b6ebbbc7169232480a729a9649b553f172f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

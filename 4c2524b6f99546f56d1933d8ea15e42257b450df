@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3b1a07d6_b81136fa",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2019-05-15T17:43:19Z",
+      "side": 1,
+      "message": "nit: line length",
+      "revId": "4c2524b6f99546f56d1933d8ea15e42257b450df",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "87f83824_4f3655b3",
+        "filename": "src/com/android/camera/one/v2/common/BasicCameraFactory.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2019-05-15T17:43:19Z",
+      "side": 1,
+      "message": "I\u0027d probably just leave the default mode in the template and not override to OFF.",
+      "revId": "4c2524b6f99546f56d1933d8ea15e42257b450df",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

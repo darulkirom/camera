@@ -16,6 +16,24 @@
       "revId": "eaf57b6ebbbc7169232480a729a9649b553f172f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c6411344_75fd01c8",
+        "filename": "src/com/android/camera/one/OneCameraCharacteristics.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 1121338
+      },
+      "writtenOn": "2019-05-15T18:43:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "650cce5e_2b6f497f",
+      "revId": "eaf57b6ebbbc7169232480a729a9649b553f172f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

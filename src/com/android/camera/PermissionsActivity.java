@@ -123,13 +123,20 @@ public class PermissionsActivity extends QuickActivity {
 
         if (checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
-            mNumPermissionsToRequest++;
-            mShouldRequestLocationPermission = true;
+            if (mSettingsManager.getBoolean(SettingsManager.SCOPE_GLOBAL,
+                Keys.KEY_RECORD_LOCATION)) {
+                mNumPermissionsToRequest++;
+                mShouldRequestLocationPermission = true;
+            }
         }
 
         if (mNumPermissionsToRequest != 0) {
             if (!isKeyguardLocked() && !mSettingsManager.getBoolean(SettingsManager.SCOPE_GLOBAL,
                     Keys.KEY_HAS_SEEN_PERMISSIONS_DIALOGS)) {
+                buildPermissionsRequest();
+            } else if (!isKeyguardLocked() && !mSettingsManager.getBoolean(
+                    SettingsManager.SCOPE_GLOBAL, Keys.KEY_HAS_SEEN_LOCATION_PERMISSION_DIALOG)
+                    && mNumPermissionsToRequest == 1 && mShouldRequestLocationPermission) {
                 buildPermissionsRequest();
             } else {
                 // Permissions dialog has already been shown, or we're on
@@ -204,6 +211,10 @@ public class PermissionsActivity extends QuickActivity {
         }
 
         if (mShouldRequestLocationPermission) {
+            mSettingsManager.set(
+                    SettingsManager.SCOPE_GLOBAL,
+                    Keys.KEY_HAS_SEEN_LOCATION_PERMISSION_DIALOG,
+                    true);
             if (grantResults.length > 0 && grantResults[mIndexPermissionRequestLocation] ==
                     PackageManager.PERMISSION_GRANTED) {
                 // Do nothing

@@ -81,6 +81,7 @@ public class Keys {
     public static final String KEY_SHOULD_SHOW_SETTINGS_BUTTON_CLING =
             "pref_should_show_settings_button_cling";
     public static final String KEY_HAS_SEEN_PERMISSIONS_DIALOGS = "pref_has_seen_permissions_dialogs";
+    public static final String KEY_HAS_SEEN_LOCATION_PERMISSION_DIALOG = "pref_has_seen_location_permission_dialog";
 
     /**
      * Set some number of defaults for the defined keys.

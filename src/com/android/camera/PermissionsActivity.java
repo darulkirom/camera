@@ -121,10 +121,19 @@ public class PermissionsActivity extends QuickActivity {
             mFlagHasStoragePermission = true;
         }
 
-        if (checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION)
-                != PackageManager.PERMISSION_GRANTED) {
-            mNumPermissionsToRequest++;
-            mShouldRequestLocationPermission = true;
+        if (mSettingsManager.getBoolean(SettingsManager.SCOPE_GLOBAL,
+            Keys.KEY_RECORD_LOCATION)) {
+            Log.e(TAG, "Have KEY_RECORD_LOCATION");
+            if (checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION)
+                    != PackageManager.PERMISSION_GRANTED) {
+                Log.e(TAG, "Want ACCESS_COARSE_LOCATION");
+                mNumPermissionsToRequest++;
+                mShouldRequestLocationPermission = true;
+            } else {
+                Log.e(TAG, "Somehow don't want ACCESS_COARSE_LOCATION");
+            }
+        } else {
+            Log.e(TAG, "In PermissionsActivity, but don't have KEY_RECORD_LOCATION");
         }
 
         if (mNumPermissionsToRequest != 0) {
@@ -173,10 +182,6 @@ public class PermissionsActivity extends QuickActivity {
     public void onRequestPermissionsResult(int requestCode,
                                            String permissions[], int[] grantResults) {
         Log.v(TAG, "onPermissionsResult counts: " + permissions.length + ":" + grantResults.length);
-        mSettingsManager.set(
-                SettingsManager.SCOPE_GLOBAL,
-                Keys.KEY_HAS_SEEN_PERMISSIONS_DIALOGS,
-                true);
 
         if (mShouldRequestCameraPermission) {
             if (grantResults.length > 0 && grantResults[mIndexPermissionRequestCamera] ==
@@ -204,6 +209,10 @@ public class PermissionsActivity extends QuickActivity {
         }
 
         if (mShouldRequestLocationPermission) {
+            mSettingsManager.set(
+                    SettingsManager.SCOPE_GLOBAL,
+                    Keys.KEY_HAS_SEEN_PERMISSIONS_DIALOGS,
+                    true);
             if (grantResults.length > 0 && grantResults[mIndexPermissionRequestLocation] ==
                     PackageManager.PERMISSION_GRANTED) {
                 // Do nothing

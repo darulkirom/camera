@@ -1440,7 +1440,7 @@ public class CameraActivity extends QuickActivity
         mFeatureConfig = OneCameraFeatureConfigCreator.createDefault(getContentResolver(),
                 getServices().getMemoryManager());
         mFatalErrorHandler = new FatalErrorHandlerImpl(this);
-        checkPermissions();
+        checkCriticalPermissions();
         if (!mHasCriticalPermissions) {
             Log.v(TAG, "onCreate: Missing critical permissions.");
             finish();
@@ -1858,7 +1858,7 @@ public class CameraActivity extends QuickActivity
     @Override
     public void onResumeTasks() {
         mPaused = false;
-        checkPermissions();
+        checkCriticalPermissions();
         if (!mHasCriticalPermissions) {
             Log.v(TAG, "onResume: Missing critical permissions.");
             finish();
@@ -1882,14 +1882,13 @@ public class CameraActivity extends QuickActivity
     }
 
     /**
-     * Checks if any of the needed Android runtime permissions are missing.
+     * Checks if any of the critical needed Android runtime permissions are missing.
      * If they are, then launch the permissions activity under one of the following conditions:
      * a) The permissions dialogs have not run yet. We will ask for permission only once.
-     * b) If the missing permissions are critical to the app running, we will display a fatal error dialog.
+     * b) If the permissions to the app running are missing, we will display a fatal error dialog.
      * Critical permissions are: camera, microphone and storage. The app cannot run without them.
-     * Non-critical permission is location.
      */
-    private void checkPermissions() {
+    private void checkCriticalPermissions() {
         if (!ApiHelper.isMOrHigher()) {
             Log.v(TAG, "not running on M, skipping permission checks");
             mHasCriticalPermissions = true;
@@ -1902,11 +1901,6 @@ public class CameraActivity extends QuickActivity
             mHasCriticalPermissions = true;
         } else {
             mHasCriticalPermissions = false;
-        }
-
-        if ((checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-                !mSettingsManager.getBoolean(SettingsManager.SCOPE_GLOBAL, Keys.KEY_HAS_SEEN_PERMISSIONS_DIALOGS)) ||
-                !mHasCriticalPermissions) {
             Intent intent = new Intent(this, PermissionsActivity.class);
             startActivity(intent);
             finish();

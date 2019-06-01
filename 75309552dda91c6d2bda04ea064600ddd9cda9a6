@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f4a2ddfb_f36f79cb",
+        "filename": "src/com/android/camera/PermissionsActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1421169
+      },
+      "writtenOn": "2019-06-01T11:16:10Z",
+      "side": 1,
+      "message": "Keeping geolocation request in PermissionsActivity for eventualities, but IMO it can be dropped entirely.",
+      "revId": "75309552dda91c6d2bda04ea064600ddd9cda9a6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "009527b7_13dae627",
+        "filename": "src/com/android/camera/app/FirstRunDialog.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 1421169
+      },
+      "writtenOn": "2019-06-01T11:16:10Z",
+      "side": 1,
+      "message": "Should there be a check for KEY_HAS_SEEN_PERMISSIONS_DIALOGS here as well?\nI don\u0027t know whether FirstRunDialog could ever be shown to users who upgrade from a previous version that did not have FirstRunDialog, since it\u0027s triggered based on CLIENT_FIRST_USE_TIME which has been in there since 2015.",
+      "revId": "75309552dda91c6d2bda04ea064600ddd9cda9a6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

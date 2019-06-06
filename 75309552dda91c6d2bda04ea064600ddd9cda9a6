@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "e0ed76e4_9b103731",
+        "filename": "src/com/android/camera/PermissionsActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1421169
+      },
+      "writtenOn": "2019-06-06T15:09:48Z",
+      "side": 1,
+      "message": "Reworked",
+      "parentUuid": "f4a2ddfb_f36f79cb",
+      "revId": "75309552dda91c6d2bda04ea064600ddd9cda9a6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "009527b7_13dae627",
         "filename": "src/com/android/camera/app/FirstRunDialog.java",
         "patchSetId": 5
@@ -33,6 +51,24 @@
       "revId": "75309552dda91c6d2bda04ea064600ddd9cda9a6",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f0910cc4_bf497b2e",
+        "filename": "src/com/android/camera/app/FirstRunDialog.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 1421169
+      },
+      "writtenOn": "2019-06-06T15:09:48Z",
+      "side": 1,
+      "message": "No, it probably won\u0027t. And should users be show FirstRunDialog, we should ask them about location in any case.",
+      "parentUuid": "009527b7_13dae627",
+      "revId": "75309552dda91c6d2bda04ea064600ddd9cda9a6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

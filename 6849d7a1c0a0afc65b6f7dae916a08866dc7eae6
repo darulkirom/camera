@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e272d3f7_a8a69a6c",
+        "filename": "src/com/android/camera/settings/CameraSettingsActivity.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 362,
+      "author": {
+        "id": 1421169
+      },
+      "writtenOn": "2019-06-16T19:36:12Z",
+      "side": 1,
+      "message": "I was bashing my head here trying to figure out why a boolean value wouldn\u0027t be stored as a boolean, but it turns out everything is stored as strings :-/\nhttps://android.googlesource.com/platform/packages/apps/Camera2/+/refs/tags/android-9.0.0_r41/src/com/android/camera/settings/SettingsManager.java#352\n\nSo, keeping the comparison against \"1\" and leaving it be.",
+      "revId": "6849d7a1c0a0afc65b6f7dae916a08866dc7eae6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

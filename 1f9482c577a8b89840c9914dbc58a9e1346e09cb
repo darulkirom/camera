@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f812d856_fc44c873",
+        "filename": "src/com/android/camera/app/FirstRunDialog.java",
+        "patchSetId": 9
+      },
+      "lineNbr": 215,
+      "author": {
+        "id": 1121338
+      },
+      "writtenOn": "2019-07-11T01:45:32Z",
+      "side": 1,
+      "message": "I guess we shouldn\u0027t be naming local variables with the style reserved for class members ?",
+      "range": {
+        "startLine": 215,
+        "startChar": 21,
+        "endLine": 215,
+        "endChar": 30
+      },
+      "revId": "1f9482c577a8b89840c9914dbc58a9e1346e09cb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

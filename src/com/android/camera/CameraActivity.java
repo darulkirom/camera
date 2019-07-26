@@ -178,9 +178,12 @@ public class CameraActivity extends QuickActivity
     private static final Log.Tag TAG = new Log.Tag("CameraActivity");
 
     private static final String INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE =
-            "android.media.action.STILL_IMAGE_CAMERA_SECURE";
+            MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE;
+    private static final String INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE_SECURE =
+            MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE_SECURE;
     public static final String ACTION_IMAGE_CAPTURE_SECURE =
-            "android.media.action.IMAGE_CAPTURE_SECURE";
+            MediaStore.ACTION_IMAGE_CAPTURE_SECURE;
+    public static final String CAMERA_LAUNCH_SOURCE_CAMERA_BUTTON = "camera_button";
 
     // The intent extra for camera from secure lock screen. True if the gallery
     // should only show newly captured pictures. sSecureAlbumId does not
@@ -1377,6 +1380,13 @@ public class CameraActivity extends QuickActivity
         }
     }
 
+    private boolean isLaunchedByGesture() {
+        boolean launchedByGesture = CAMERA_LAUNCH_SOURCE_CAMERA_BUTTON
+            .equals(getIntent().getStringExtra(Intent.EXTRA_KEY_EVENT));
+        Log.w(TAG, "was launched by gesture: " + launchedByGesture);
+        return launchedByGesture;
+    }
+
     /**
      * Note: Make sure this callback is unregistered properly when the activity
      * is destroyed since we're otherwise leaking the Activity reference.
@@ -1563,6 +1573,7 @@ public class CameraActivity extends QuickActivity
         Intent intent = getIntent();
         String action = intent.getAction();
         if (INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE.equals(action)
+                || INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE_SECURE.equals(action)
                 || ACTION_IMAGE_CAPTURE_SECURE.equals(action)) {
             mSecureCamera = true;
         } else {
@@ -1590,6 +1601,7 @@ public class CameraActivity extends QuickActivity
             IntentFilter filter_user_unlock = new IntentFilter(Intent.ACTION_USER_PRESENT);
             registerReceiver(mShutdownReceiver, filter_user_unlock);
         }
+        isLaunchedByGesture();
         mCameraAppUI = new CameraAppUI(this,
                 (MainActivityLayout) findViewById(R.id.activity_root_view), isCaptureIntent());
 
@@ -1704,7 +1716,9 @@ public class CameraActivity extends QuickActivity
             // Capture intent.
             modeIndex = captureIntentIndex;
         } else if (MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA.equals(intentAction)
-                ||MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE.equals(intentAction)
+                || MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE.equals(intentAction)
+                || MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE.equals(intentAction)
+                || MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE_SECURE.equals(intentAction)
                 || MediaStore.ACTION_IMAGE_CAPTURE_SECURE.equals(intentAction)) {
             modeIndex = mSettingsManager.getInteger(SettingsManager.SCOPE_GLOBAL,
                 Keys.KEY_CAMERA_MODULE_LAST_USED);
@@ -1992,6 +2006,7 @@ public class CameraActivity extends QuickActivity
                 case MediaStore.ACTION_IMAGE_CAPTURE:
                     source = ForegroundSource.ACTION_IMAGE_CAPTURE;
                     break;
+                case MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE:
                 case MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA:
                     // was UNKNOWN_SOURCE in Fishlake.
                     source = ForegroundSource.ACTION_STILL_IMAGE_CAMERA;
@@ -2003,6 +2018,7 @@ public class CameraActivity extends QuickActivity
                 case MediaStore.ACTION_VIDEO_CAPTURE:
                     source = ForegroundSource.ACTION_VIDEO_CAPTURE;
                     break;
+                case MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE_SECURE:
                 case MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE:
                     // was ACTION_IMAGE_CAPTURE_SECURE in Fishlake.
                     source = ForegroundSource.ACTION_STILL_IMAGE_CAMERA_SECURE;

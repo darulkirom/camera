@@ -1530,6 +1530,8 @@ public class PhotoModule
     private boolean isResumeFromLockscreen() {
         String action = mActivity.getIntent().getAction();
         return (MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA.equals(action)
+                || MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE.equals(action)
+                || MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE.equals(action)
                 || MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE.equals(action));
     }
 

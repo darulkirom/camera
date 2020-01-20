@@ -1,0 +1,12 @@
+Open-Source-Licensing+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Code-Review+2: Hung-ying Tyan <tyanh@google.com>
+Code-Review+2: SzuWei Lin <szuweilin@google.com>
+DrNo-Review+1: Hung-ying Tyan <tyanh@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Autosubmit+1: SzuWei Lin <szuweilin@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Mon, 20 Jan 2020 09:58:13 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/packages/apps/Camera2/+/1209144
+Project: platform/packages/apps/Camera2
+Branch: refs/heads/android10-gsi

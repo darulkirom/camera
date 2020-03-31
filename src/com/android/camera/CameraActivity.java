@@ -180,9 +180,14 @@ public class CameraActivity extends QuickActivity
     private static final Log.Tag TAG = new Log.Tag("CameraActivity");
 
     private static final String INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE =
-            "android.media.action.STILL_IMAGE_CAMERA_SECURE";
+            MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE;
+    private static final String INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE_SECURE =
+            MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE_SECURE;
     public static final String ACTION_IMAGE_CAPTURE_SECURE =
-            "android.media.action.IMAGE_CAPTURE_SECURE";
+            MediaStore.ACTION_IMAGE_CAPTURE_SECURE;
+    public static final String EXTRA_CAMERA_LAUNCH_SOURCE
+            = "com.android.systemui.camera_launch_source";
+    public static final String CAMERA_LAUNCH_SOURCE_CAMERA_BUTTON = "camera_button";
 
     // The intent extra for camera from secure lock screen. True if the gallery
     // should only show newly captured pictures. sSecureAlbumId does not
@@ -1377,6 +1382,12 @@ public class CameraActivity extends QuickActivity
         }
     }
 
+    /* Currently unused and only checks for camera button, might be amended later */
+    private boolean launchedByGesture() {
+        return CAMERA_LAUNCH_SOURCE_CAMERA_BUTTON.equals(
+                getIntent().getStringExtra(EXTRA_CAMERA_LAUNCH_SOURCE));
+    }
+
     /**
      * Note: Make sure this callback is unregistered properly when the activity
      * is destroyed since we're otherwise leaking the Activity reference.
@@ -1563,6 +1574,7 @@ public class CameraActivity extends QuickActivity
         Intent intent = getIntent();
         String action = intent.getAction();
         if (INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE.equals(action)
+                || INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE_SECURE.equals(action)
                 || ACTION_IMAGE_CAPTURE_SECURE.equals(action)) {
             mSecureCamera = true;
         } else {
@@ -1705,7 +1717,9 @@ public class CameraActivity extends QuickActivity
             // Capture intent.
             modeIndex = captureIntentIndex;
         } else if (MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA.equals(intentAction)
-                ||MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE.equals(intentAction)
+                || MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE.equals(intentAction)
+                || MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE.equals(intentAction)
+                || MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE_SECURE.equals(intentAction)
                 || MediaStore.ACTION_IMAGE_CAPTURE_SECURE.equals(intentAction)) {
             modeIndex = mSettingsManager.getInteger(SettingsManager.SCOPE_GLOBAL,
                 Keys.KEY_CAMERA_MODULE_LAST_USED);
@@ -2027,6 +2041,7 @@ public class CameraActivity extends QuickActivity
                     source = ForegroundSource.ACTION_IMAGE_CAPTURE;
                     break;
                 case MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA:
+                case MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE:
                     // was UNKNOWN_SOURCE in Fishlake.
                     source = ForegroundSource.ACTION_STILL_IMAGE_CAMERA;
                     break;
@@ -2038,6 +2053,7 @@ public class CameraActivity extends QuickActivity
                     source = ForegroundSource.ACTION_VIDEO_CAPTURE;
                     break;
                 case MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_SECURE:
+                case MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA_GESTURE_SECURE:
                     // was ACTION_IMAGE_CAPTURE_SECURE in Fishlake.
                     source = ForegroundSource.ACTION_STILL_IMAGE_CAMERA_SECURE;
                     break;

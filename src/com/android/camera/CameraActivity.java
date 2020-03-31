@@ -67,6 +67,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ShareActionProvider;
+import android.widget.Toast;
 
 import com.android.camera.app.AppController;
 import com.android.camera.app.CameraAppUI;
@@ -172,6 +173,8 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class CameraActivity extends QuickActivity
         implements AppController, CameraAgent.CameraOpenCallback,
@@ -253,6 +256,8 @@ public class CameraActivity extends QuickActivity
     private ViewGroup mUndoDeletionBar;
     private boolean mIsUndoingDeletion = false;
     private boolean mIsActivityRunning = false;
+    private Timer mGestureTimer = new Timer();
+    private boolean mIsGestureTimerRunning = false;
     private FatalErrorHandler mFatalErrorHandler;
     private boolean mHasCriticalPermissions;
 
@@ -1328,6 +1333,61 @@ public class CameraActivity extends QuickActivity
         }
     }
 
+    private void startGestureTimer() {
+        Log.i(TAG, "Starting Gesture Timer...");
+        mIsGestureTimerRunning = true;
+        mGestureTimer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                Log.i(TAG, "Camera timing out due to inactivity, exiting!");
+                mIsGestureTimerRunning = false;
+                // Finish activity, might be better ways? onDestroy and whatnot
+                finish();
+            }
+        }, 20000 /* 20 seconds */);
+    }
+
+    private void cancelGestureTimer() {
+        Log.i(TAG, "Gesture Timer timeout canceled");
+        mIsGestureTimerRunning = false;
+        if (mGestureTimer != null) {
+            try {
+                mGestureTimer.cancel();
+            } catch (IllegalStateException e) {
+                Log.e(TAG, "cancelGestureTimer: Caught IllegalStateException!", e);
+            }
+        }
+    }
+
+    private void prolongGestureTimer() {
+        Log.i(TAG, "prolongGestureTimer");
+        /* Should never happen
+        if (!mIsGestureTimerRunning) {
+            Log.i(TAG, "prolongGestureTimer: no timer, skipping prolong");
+            return;
+        }
+        */
+        if (launchedByGesture()) {
+            Log.i(TAG, "prolongGestureTimer: Button pressed/released, adding 10s");
+            if (mIsGestureTimerRunning) {
+                Log.i(TAG, "prolongGestureTimer: Timer already running, canceling...");
+                cancelGestureTimer();
+            }
+            mIsGestureTimerRunning = true;
+            /* Need to create a new Timer after canceling previous */
+            mGestureTimer = new Timer();
+            mGestureTimer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    Log.i(TAG, "Camera timing out due to inactivity, exiting!");
+                    mIsGestureTimerRunning = false;
+                    // Finish activity, might be better ways? onDestroy and whatnot
+                    finish();
+                }
+            }, 10000 /* 10 seconds */);
+        }
+    }
+
     @Override
     public CameraProvider getCameraProvider() {
         return mCameraController;
@@ -1382,10 +1442,11 @@ public class CameraActivity extends QuickActivity
         }
     }
 
-    /* Currently unused and only checks for camera button, might be amended later */
     private boolean launchedByGesture() {
-        return CAMERA_LAUNCH_SOURCE_CAMERA_BUTTON.equals(
-                getIntent().getStringExtra(EXTRA_CAMERA_LAUNCH_SOURCE));
+        boolean wasLaunchedByGesture = CAMERA_LAUNCH_SOURCE_CAMERA_BUTTON
+            .equals(getIntent().getStringExtra(EXTRA_CAMERA_LAUNCH_SOURCE));
+        Log.i(TAG, "Camera was launched by gesture: " + wasLaunchedByGesture);
+        return wasLaunchedByGesture;
     }
 
     /**
@@ -1451,9 +1512,20 @@ public class CameraActivity extends QuickActivity
         mFeatureConfig = OneCameraFeatureConfigCreator.createDefault(getContentResolver(),
                 getServices().getMemoryManager());
         mFatalErrorHandler = new FatalErrorHandlerImpl(this);
+
+        Toast.makeText(
+                mAppContext,
+                "Camera will close soon due to inactivity", // TODO: use R, translate
+                Toast.LENGTH_LONG
+        ).show();
+
+        /* Need to start timer quite early because permission screen could open */
+        if (launchedByGesture())
+            startGestureTimer();
+
         checkPermissions();
         if (!mHasCriticalPermissions) {
-            Log.v(TAG, "onCreate: Missing critical permissions.");
+            Log.v(TAG, "onCreate: Missing critical permissions. Exiting.");
             finish();
             return;
         }
@@ -1820,6 +1892,9 @@ public class CameraActivity extends QuickActivity
     public void onUserInteraction() {
         super.onUserInteraction();
         if (!isFinishing()) {
+            if (mIsGestureTimerRunning) {
+                cancelGestureTimer();
+            }
             keepScreenOnForAWhile();
         }
     }
@@ -1896,12 +1971,21 @@ public class CameraActivity extends QuickActivity
             }
         }
 
+        if (mIsGestureTimerRunning) {
+            cancelGestureTimer();
+        }
+
         profile.stop();
     }
 
     @Override
     public void onResumeTasks() {
         mPaused = false;
+
+        if (mIsGestureTimerRunning) {
+            prolongGestureTimer();
+        }
+
         checkPermissions();
         if (!mHasCriticalPermissions) {
             Log.v(TAG, "onResume: Missing critical permissions.");
@@ -2265,6 +2349,10 @@ public class CameraActivity extends QuickActivity
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_CAMERA && mIsGestureTimerRunning) {
+            prolongGestureTimer();
+        }
+
         if (!mFilmstripVisible) {
             if (mCurrentModule.onKeyDown(keyCode, event)) {
                 return true;
@@ -2283,6 +2371,10 @@ public class CameraActivity extends QuickActivity
 
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_CAMERA && mIsGestureTimerRunning) {
+            prolongGestureTimer();
+        }
+
         if (!mFilmstripVisible) {
             // If a module is in the middle of capture, it should
             // consume the key event.

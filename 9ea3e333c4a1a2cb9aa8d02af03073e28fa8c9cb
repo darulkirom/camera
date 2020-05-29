@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d07ba157_39c75483",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1010050
+      },
+      "writtenOn": "2020-05-29T20:15:22Z",
+      "side": 1,
+      "message": "you can have a FULL device that doesn\u0027t support autofocus just fine, so I\u0027m not sure the commit message is accurate.  (AF is orthogonal to the hardware support levels).\n\nWe should try to support tap-to-meter even if focusing isn\u0027t possible; I\u0027m a bit surprised that camera2 would do this wrong since nearly all front-facing cameras are fixed focus.",
+      "range": {
+        "startLine": 10,
+        "startChar": 15,
+        "endLine": 10,
+        "endChar": 19
+      },
+      "revId": "9ea3e333c4a1a2cb9aa8d02af03073e28fa8c9cb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

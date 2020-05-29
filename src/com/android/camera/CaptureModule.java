@@ -219,8 +219,7 @@ public class CaptureModule extends CameraModule implements
                 public boolean onSingleTapUp(MotionEvent ev) {
                     Point tapPoint = new Point((int) ev.getX(), (int) ev.getY());
                     Log.v(TAG, "onSingleTapUpPreview location=" + tapPoint);
-                    if (!mCameraCharacteristics.isAutoExposureSupported() &&
-                          !mCameraCharacteristics.isAutoFocusSupported()) {
+                    if (!mCameraCharacteristics.isAutoFocusSupported()) {
                         return false;
                     }
                     startActiveFocusAt(tapPoint.x, tapPoint.y);

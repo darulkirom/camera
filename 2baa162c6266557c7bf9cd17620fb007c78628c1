@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cefc00b6_1eee4816",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 1214304
+      },
+      "writtenOn": "2020-06-26T21:45:21Z",
+      "side": 1,
+      "message": "Also, the way we perform this operation in GCA, and the way MediaStore is designed for is to insert a pending entry in mediaStore, write the data, publish it by setting the IS_PENDING bit to 0.\n\nSo in this case, the contentvalues you use to insert the item should set IS_PENDING to 1 in the beginning. And then use the Uri to write the bitmap, and after that publish the item with a \n```\nContentValues publishValues \u003d new ContentValues();\npublishValues.put(Media.IS_PENDING, 0);\nresover.update(uri, publishValues);\n```\nIn case of an exception, in the catch clause you can delete the uri if it\u0027s not null.\n\nYou can look at open and publish methods in https://source.corp.google.com/piper///depot/google3/java/com/google/android/libraries/camera/storage/fs/PendingFileObject.java for reference",
+      "range": {
+        "startLine": 180,
+        "startChar": 12,
+        "endLine": 180,
+        "endChar": 13
+      },
+      "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a8b4cc2f_fa735909",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1214304
+      },
+      "writtenOn": "2020-06-26T21:45:21Z",
+      "side": 1,
+      "message": "These fields will be inferred by MediaStore by reading the image and populated from the EXIF of the file. Setting them here is effectively a No-Op, so can be removed",
+      "range": {
+        "startLine": 203,
+        "startChar": 8,
+        "endLine": 206,
+        "endChar": 58
+      },
+      "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "392923aa_25526646",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 1214304
+      },
+      "writtenOn": "2020-06-26T21:45:21Z",
+      "side": 1,
+      "message": "These are unnecessary too.",
+      "range": {
+        "startLine": 207,
+        "startChar": 8,
+        "endLine": 209,
+        "endChar": 44
+      },
+      "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "04bb922c_272a16b9",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 309,
+      "author": {
+        "id": 1214304
+      },
+      "writtenOn": "2020-06-26T21:45:21Z",
+      "side": 1,
+      "message": "This method can now be deleted",
+      "range": {
+        "startLine": 303,
+        "startChar": 4,
+        "endLine": 309,
+        "endChar": 5
+      },
+      "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

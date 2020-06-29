@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "013150d8_2d295993",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-06-29T19:07:04Z",
+      "side": 1,
+      "message": "I updated this approach here, would love a look at the most recent patchset to ensure the changes are as desired.",
+      "parentUuid": "cefc00b6_1eee4816",
+      "range": {
+        "startLine": 180,
+        "startChar": 12,
+        "endLine": 180,
+        "endChar": 13
+      },
+      "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a8b4cc2f_fa735909",
         "filename": "src/com/android/camera/Storage.java",
         "patchSetId": 2
@@ -45,6 +69,30 @@
       "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "940009ad_e8644602",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 206,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-06-29T19:07:04Z",
+      "side": 1,
+      "message": "Removed these.",
+      "parentUuid": "a8b4cc2f_fa735909",
+      "range": {
+        "startLine": 203,
+        "startChar": 8,
+        "endLine": 206,
+        "endChar": 58
+      },
+      "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "7ee17d5c_e2b131de",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-06-29T19:07:04Z",
+      "side": 1,
+      "message": "Removed these.",
+      "parentUuid": "392923aa_25526646",
+      "range": {
+        "startLine": 207,
+        "startChar": 8,
+        "endLine": 209,
+        "endChar": 44
+      },
+      "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "04bb922c_272a16b9",
         "filename": "src/com/android/camera/Storage.java",
         "patchSetId": 2
@@ -91,6 +163,30 @@
       "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "66c6f529_e19acf17",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 309,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-06-29T19:07:04Z",
+      "side": 1,
+      "message": "Deleted this method.",
+      "parentUuid": "04bb922c_272a16b9",
+      "range": {
+        "startLine": 303,
+        "startChar": 4,
+        "endLine": 309,
+        "endChar": 5
+      },
+      "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

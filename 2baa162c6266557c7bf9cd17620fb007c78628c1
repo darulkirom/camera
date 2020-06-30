@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "002a957d_17704aa4",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 180,
+      "author": {
+        "id": 1214304
+      },
+      "writtenOn": "2020-06-30T18:02:42Z",
+      "side": 1,
+      "message": "LGTM",
+      "parentUuid": "013150d8_2d295993",
+      "range": {
+        "startLine": 180,
+        "startChar": 12,
+        "endLine": 180,
+        "endChar": 13
+      },
+      "revId": "2baa162c6266557c7bf9cd17620fb007c78628c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a8b4cc2f_fa735909",
         "filename": "src/com/android/camera/Storage.java",
         "patchSetId": 2

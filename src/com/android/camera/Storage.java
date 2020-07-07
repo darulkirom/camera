@@ -165,6 +165,7 @@ public class Storage {
         Uri uri = null;
         try {
             uri = resolver.insert(Media.EXTERNAL_CONTENT_URI, values);
+            Log.i(TAG, "Image with uri: " + uri + " was inserted into the MediaStore");
             writeBitmap(uri, exif, bitmap, resolver);
         } catch (Throwable th)  {
             // This can happen when the external volume is already mounted, but
@@ -183,15 +184,19 @@ public class Storage {
     private void writeBitmap(Uri uri, ExifInterface exif, Bitmap bitmap, ContentResolver resolver)
             throws FileNotFoundException, IOException {
         OutputStream os = resolver.openOutputStream(uri);
+        Log.i(TAG, "OutputStream for " + uri + " was opened");
         if (exif != null) {
             exif.writeExif(bitmap, os);
         } else {
             bitmap.compress(Bitmap.CompressFormat.JPEG, 90, os);
         }
+        os.close();
+        Log.i(TAG, "OutputStream for " + uri + " was closed");
 
         ContentValues publishValues = new ContentValues();
         publishValues.put(Media.IS_PENDING, 0);
         resolver.update(uri, publishValues, null, null);
+        Log.i(TAG, "Image with uri: " + uri + " was published to the MediaStore");
     }
 
     // Get a ContentValues object for the given photo data
@@ -206,6 +211,10 @@ public class Storage {
 
         if (isPending) {
             values.put(Media.IS_PENDING, 1);
+            Log.i(TAG, "ContentValues for " + title + " created with IS_PENDING == 1");
+        } else {
+            values.put(Media.IS_PENDING, 0);
+            Log.i(TAG, "ContentValues for " + title + " created with IS_PENDING == 0");
         }
 
         if (location != null) {
@@ -358,6 +367,7 @@ public class Storage {
         Uri resultUri = imageUri;
         if (isSessionUri(imageUri)) {
             // If this is a session uri, then we need to add the image
+            Log.i(TAG, "Image with session uri: " + imageUri + " is being added to the MediaStore");
             resultUri = addImageToMediaStore(resolver, title, date, location, orientation,
                     jpegLength, bitmap, width, height, mimeType, exif);
             sSessionsToContentUris.put(imageUri, resultUri);
@@ -366,6 +376,7 @@ public class Storage {
             // Update the MediaStore
             ContentValues values = getContentValuesForData(title, date, location, mimeType, false);
             resolver.update(imageUri, values, null, null);
+            Log.i(TAG, "Image with uri: " + imageUri + " was updated in the MediaStore");
         }
         return resultUri;
     }

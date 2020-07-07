@@ -3010,9 +3010,12 @@ public class CameraActivity extends QuickActivity
                 if (sessionProgress < 0) {
                     hideSessionProgress();
                 } else {
-                    int progressMessageId = session.getProgressMessageId();
-                    showSessionProgress(progressMessageId);
-                    updateSessionProgress(sessionProgress);
+                    hideSessionProgress();
+                    // TODO(b/160596812) This progress message can be enabled when it
+                    // successfully dismisses
+                    // int progressMessageId = session.getProgressMessageId();
+                    // showSessionProgress(progressMessageId);
+                    // updateSessionProgress(sessionProgress);
                 }
             } else {
                 hideSessionProgress();

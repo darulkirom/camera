@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8d286078_8f109e71",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 167,
+      "author": {
+        "id": 1214304
+      },
+      "writtenOn": "2020-07-07T23:37:00Z",
+      "side": 1,
+      "message": "Log this insertion too, and then I think all mediaStore updates are logged?",
+      "range": {
+        "startLine": 167,
+        "startChar": 12,
+        "endLine": 167,
+        "endChar": 70
+      },
+      "revId": "324ed504ebadeeef928badb2fe77949e219b5e7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

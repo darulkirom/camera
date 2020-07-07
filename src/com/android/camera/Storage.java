@@ -206,6 +206,8 @@ public class Storage {
 
         if (isPending) {
             values.put(Media.IS_PENDING, 1);
+        } else {
+            values.put(Media.IS_PENDING, 0);
         }
 
         if (location != null) {

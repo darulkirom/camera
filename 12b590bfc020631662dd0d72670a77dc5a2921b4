@@ -1,0 +1,48 @@
+{
+  "comments": [
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000003795613",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1356041?revision\u003d5",
+      "fixSuggestions": [
+        {
+          "fixId": "4fd47687_e5e52b63",
+          "description": "Change to \"src/com/android/camera/CameraActivity.java\"",
+          "replacements": [
+            {
+              "path": "src/com/android/camera/CameraActivity.java",
+              "range": {
+                "startLine": 3015,
+                "startChar": 24,
+                "endLine": 3015,
+                "endChar": 35
+              },
+              "replacement": "successfully"
+            }
+          ]
+        }
+      ],
+      "key": {
+        "uuid": "3143de8a_4d0622fc",
+        "filename": "src/com/android/camera/CameraActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 3015,
+      "author": {
+        "id": 1550585
+      },
+      "writtenOn": "2020-07-08T23:25:09Z",
+      "side": 1,
+      "message": "Common typo found: \"succesfully\" -- should it be \"successfully\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line.",
+      "range": {
+        "startLine": 3015,
+        "startChar": 24,
+        "endLine": 3015,
+        "endChar": 35
+      },
+      "revId": "12b590bfc020631662dd0d72670a77dc5a2921b4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

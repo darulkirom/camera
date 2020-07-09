@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ccc96fe7_890a30bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1096713
+      },
+      "writtenOn": "2020-07-09T02:24:40Z",
+      "side": 1,
+      "message": "We probably want to update the commit message to reflect that we\u0027re removing the \"Saving...\" bar, and note the lint comment.\n\nI\u0027ll let others who are more familiar with this code do the actual review.  But I\u0027ve verified that this works as we expect.",
+      "revId": "12b590bfc020631662dd0d72670a77dc5a2921b4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

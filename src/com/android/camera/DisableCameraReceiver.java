@@ -26,8 +26,8 @@ import android.hardware.Camera.CameraInfo;
 import com.android.camera.debug.Log;
 
 // We want to disable camera-related activities if there is no camera. This
-// receiver runs when BOOT_COMPLETED intent is received. After running once
-// this receiver will be disabled, so it will not run again.
+// receiver runs when BOOT_COMPLETED intent is received. Camera icon is show
+// if camera valid camera reported from camera hal in every boot up.
 public class DisableCameraReceiver extends BroadcastReceiver {
     private static final Log.Tag TAG = new Log.Tag("DisableCamRcver");
     private static final boolean CHECK_BACK_CAMERA_ONLY = false;
@@ -47,10 +47,12 @@ public class DisableCameraReceiver extends BroadcastReceiver {
             for (int i = 0; i < ACTIVITIES.length; i++) {
                 disableComponent(context, ACTIVITIES[i]);
             }
+        } else {
+            Log.i(TAG, "enable all camera activities");
+            for (int i = 0; i < ACTIVITIES.length; i++) {
+                enableComponent(context, ACTIVITIES[i]);
+            }
         }
-
-        // Disable this receiver so it won't run again.
-        disableComponent(context, "com.android.camera.DisableCameraReceiver");
     }
 
     private boolean hasCamera() {
@@ -81,6 +83,17 @@ public class DisableCameraReceiver extends BroadcastReceiver {
         // immediately because we are in the same app.
         pm.setComponentEnabledSetting(name,
             PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+            PackageManager.DONT_KILL_APP);
+    }
+
+    private void enableComponent(Context context, String klass) {
+        ComponentName name = new ComponentName(context, klass);
+        PackageManager pm = context.getPackageManager();
+
+        // We need the DONT_KILL_APP flag, otherwise we will be killed
+        // immediately because we are in the same app.
+        pm.setComponentEnabledSetting(name,
+            PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
             PackageManager.DONT_KILL_APP);
     }
 }

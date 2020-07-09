@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "76f80341_cb9383d3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-07-09T15:48:26Z",
+      "side": 1,
+      "message": "Updated the commit message and addressed the lint issue. Thanks for the verification.",
+      "parentUuid": "ccc96fe7_890a30bf",
+      "revId": "12b590bfc020631662dd0d72670a77dc5a2921b4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f1e2319f_5a8ca463",
         "filename": "src/com/android/camera/CameraActivity.java",
         "patchSetId": 5
@@ -39,6 +57,30 @@
       "revId": "12b590bfc020631662dd0d72670a77dc5a2921b4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e41fde9f_3e2ac2ca",
+        "filename": "src/com/android/camera/CameraActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 3015,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-07-09T15:48:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f1e2319f_5a8ca463",
+      "range": {
+        "startLine": 3015,
+        "startChar": 20,
+        "endLine": 3015,
+        "endChar": 27
+      },
+      "revId": "12b590bfc020631662dd0d72670a77dc5a2921b4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

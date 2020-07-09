@@ -26,8 +26,8 @@ import android.hardware.Camera.CameraInfo;
 import com.android.camera.debug.Log;
 
 // We want to disable camera-related activities if there is no camera. This
-// receiver runs when BOOT_COMPLETED intent is received. After running once
-// this receiver will be disabled, so it will not run again.
+// receiver runs when BOOT_COMPLETED intent is received. Camera icon is show
+// if camera valid camera reported from camera hal in every boot up.
 public class DisableCameraReceiver extends BroadcastReceiver {
     private static final Log.Tag TAG = new Log.Tag("DisableCamRcver");
     private static final boolean CHECK_BACK_CAMERA_ONLY = false;
@@ -45,12 +45,14 @@ public class DisableCameraReceiver extends BroadcastReceiver {
         if (!needCameraActivity) {
             Log.i(TAG, "disable all camera activities");
             for (int i = 0; i < ACTIVITIES.length; i++) {
-                disableComponent(context, ACTIVITIES[i]);
+                setComponent(context, ACTIVITIES[i], PackageManager.COMPONENT_ENABLED_STATE_DISABLED);
+            }
+        } else {
+            Log.i(TAG, "enable all camera activities");
+            for (int i = 0; i < ACTIVITIES.length; i++) {
+                setComponent(context, ACTIVITIES[i], PackageManager.COMPONENT_ENABLED_STATE_ENABLED);
             }
         }
-
-        // Disable this receiver so it won't run again.
-        disableComponent(context, "com.android.camera.DisableCameraReceiver");
     }
 
     private boolean hasCamera() {
@@ -73,14 +75,14 @@ public class DisableCameraReceiver extends BroadcastReceiver {
         return false;
     }
 
-    private void disableComponent(Context context, String klass) {
+    private void setComponent(Context context, String klass, final int enabledState) {
         ComponentName name = new ComponentName(context, klass);
         PackageManager pm = context.getPackageManager();
 
         // We need the DONT_KILL_APP flag, otherwise we will be killed
         // immediately because we are in the same app.
         pm.setComponentEnabledSetting(name,
-            PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
+            enabledState,
             PackageManager.DONT_KILL_APP);
     }
 }

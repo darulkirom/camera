@@ -16,6 +16,29 @@
       "revId": "12b590bfc020631662dd0d72670a77dc5a2921b4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f1e2319f_5a8ca463",
+        "filename": "src/com/android/camera/CameraActivity.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 3015,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-07-09T15:28:28Z",
+      "side": 1,
+      "message": "nit: single space after //",
+      "range": {
+        "startLine": 3015,
+        "startChar": 20,
+        "endLine": 3015,
+        "endChar": 27
+      },
+      "revId": "12b590bfc020631662dd0d72670a77dc5a2921b4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }

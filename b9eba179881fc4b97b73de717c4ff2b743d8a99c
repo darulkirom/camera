@@ -16,6 +16,24 @@
       "revId": "b9eba179881fc4b97b73de717c4ff2b743d8a99c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9fa00ce9_7e68ff78",
+        "filename": "src/com/android/camera/DisableCameraReceiver.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1407350
+      },
+      "writtenOn": "2020-07-10T02:09:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4f10fc00_17a3c666",
+      "revId": "b9eba179881fc4b97b73de717c4ff2b743d8a99c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

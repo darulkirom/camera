@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e7947d4a_d46b47ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1096713
+      },
+      "writtenOn": "2020-07-10T17:30:31Z",
+      "side": 1,
+      "message": "I\u0027m good with this change, but feel like the +2 should come from someone more familiar with this code.",
+      "revId": "05025c58b281ab3ddb0ad56fd119f0b26dea6f60",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

@@ -63,6 +63,30 @@
       "revId": "dfed4857e0c123dfe0654085a7a0f2dc2456d48e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b1cb3367_d9b19334",
+        "filename": "src/com/android/camera/DisableCameraReceiver.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1407350
+      },
+      "writtenOn": "2020-07-10T01:34:26Z",
+      "side": 1,
+      "message": "Hi Rman \u0026 Emilian,\nI have add your advise in patch set #2.",
+      "parentUuid": "e29c7310_f4ba90a7",
+      "range": {
+        "startLine": 89,
+        "startChar": 4,
+        "endLine": 89,
+        "endChar": 65
+      },
+      "revId": "dfed4857e0c123dfe0654085a7a0f2dc2456d48e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }

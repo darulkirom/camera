@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2d2ca98b_f98a4220",
+        "filename": "src/com/android/camera/DisableCameraReceiver.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-07-10T16:45:12Z",
+      "side": 1,
+      "message": "Hi Emilian Peev and Sanshan Zhang,\n  Should we consider renaming this class? How about SetActivitiesCameraReceiver? If we decide to change the name of the class, please change it in AndroidManifest.xml also.\n\n  Would appreciate if the comment for this class could be changed. What do you think of a comment like the following?\n\n// Enable or disable camera-related activities based on \"camera hal\" in every boot up. \n// This receiver runs when BOOT_COMPLETED intent is received. After running once this\n// receiver will be disabled, so it will not run again.",
+      "revId": "2d164eb9030b70c6cdedead06c91e1734f4672c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "11dbbb90_1ad17df1",
+        "filename": "src/com/android/camera/DisableCameraReceiver.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-07-10T16:45:12Z",
+      "side": 1,
+      "message": "nit: Should have caught this earlier (sorry)\n\n+ Delete  needCameraActivity, CHECK_BACK_CAMERA_ONLY\n+ Define int component_state.\n+ Set that to correct state based on hasBackCamera/hasCamera\n+ Log the component_state\n+ For loop code that calls setComponent and passes component_state as argument (avoids duplicated for loop).",
+      "revId": "2d164eb9030b70c6cdedead06c91e1734f4672c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

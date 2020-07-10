@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4f10fc00_17a3c666",
+        "filename": "src/com/android/camera/DisableCameraReceiver.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-07-10T02:00:01Z",
+      "side": 1,
+      "message": "nit: Please fix line#48 and 53. Each line of text in your code should be at most 100 characters long.\n\nhttps://source.android.com/setup/contribute/code-style#limit-line-length",
+      "revId": "b9eba179881fc4b97b73de717c4ff2b743d8a99c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

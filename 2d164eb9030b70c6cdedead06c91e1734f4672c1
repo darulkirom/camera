@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "1357f0ca_049f02ee",
+        "filename": "src/com/android/camera/DisableCameraReceiver.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1407350
+      },
+      "writtenOn": "2020-07-11T03:36:15Z",
+      "side": 1,
+      "message": "Hi Raman,\nI also think renaming the class name is reasonble. I will change it in patchset #4. Thanks.",
+      "parentUuid": "ee10cd54_3d3743dd",
+      "revId": "2d164eb9030b70c6cdedead06c91e1734f4672c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "11dbbb90_1ad17df1",
         "filename": "src/com/android/camera/DisableCameraReceiver.java",
         "patchSetId": 3

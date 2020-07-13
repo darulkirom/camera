@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "d0a4d7d4_26b0c510",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 7
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2020-07-13T17:25:00Z",
+      "side": 1,
+      "message": "Remove the device code name from the commit text.",
+      "range": {
+        "startLine": 10,
+        "startChar": 32,
+        "endLine": 10,
+        "endChar": 39
+      },
+      "revId": "05025c58b281ab3ddb0ad56fd119f0b26dea6f60",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d613be44_e96dcdc0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2020-07-13T17:25:00Z",
+      "side": 1,
+      "message": "same here.",
+      "range": {
+        "startLine": 13,
+        "startChar": 67,
+        "endLine": 13,
+        "endChar": 74
+      },
+      "revId": "05025c58b281ab3ddb0ad56fd119f0b26dea6f60",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e7947d4a_d46b47ab",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 7
@@ -50,6 +96,75 @@
       "revId": "05025c58b281ab3ddb0ad56fd119f0b26dea6f60",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a624f7d_736415d5",
+        "filename": "src/com/android/camera/CameraActivity.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 3015,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2020-07-13T17:25:00Z",
+      "side": 1,
+      "message": "Can you please remove the device name from the comments?",
+      "range": {
+        "startLine": 3015,
+        "startChar": 49,
+        "endLine": 3015,
+        "endChar": 56
+      },
+      "revId": "05025c58b281ab3ddb0ad56fd119f0b26dea6f60",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c50f3a24_2c7fb0ca",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2020-07-13T17:25:00Z",
+      "side": 1,
+      "message": "nit: remove the \",\"?",
+      "range": {
+        "startLine": 199,
+        "startChar": 47,
+        "endLine": 199,
+        "endChar": 48
+      },
+      "revId": "05025c58b281ab3ddb0ad56fd119f0b26dea6f60",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9131a161_ac0539d3",
+        "filename": "src/com/android/camera/Storage.java",
+        "patchSetId": 7
+      },
+      "lineNbr": 379,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2020-07-13T17:25:00Z",
+      "side": 1,
+      "message": "nit: same here.",
+      "range": {
+        "startLine": 379,
+        "startChar": 56,
+        "endLine": 379,
+        "endChar": 57
+      },
+      "revId": "05025c58b281ab3ddb0ad56fd119f0b26dea6f60",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }

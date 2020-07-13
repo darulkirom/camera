@@ -53,6 +53,23 @@
     },
     {
       "key": {
+        "uuid": "d3d66b19_2118d710",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-07-13T18:53:52Z",
+      "side": 1,
+      "message": "Hi Colin,\n  Can you rebase? Builds failed because of merge conflicts. Thanks\n\nCherryPickError: Changes failed to apply, merge conflict detected.",
+      "revId": "a90321cb8d3e9b54dd0c2498c99ca5c08c5ef877",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "149c8333_32a28172",
         "filename": "src/com/android/camera/SetActivitiesCameraReceiver.java",
         "patchSetId": 4

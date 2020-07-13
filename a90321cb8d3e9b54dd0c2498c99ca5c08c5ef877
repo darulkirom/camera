@@ -33,6 +33,23 @@
       "revId": "a90321cb8d3e9b54dd0c2498c99ca5c08c5ef877",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "149c8333_32a28172",
+        "filename": "src/com/android/camera/SetActivitiesCameraReceiver.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-07-13T15:29:22Z",
+      "side": 1,
+      "message": "The CHECK_BACK_CAMERA_ONLY flag here seems to be always false from line 32. Perhaps I\u0027m missing something, but is this check necessary?",
+      "revId": "a90321cb8d3e9b54dd0c2498c99ca5c08c5ef877",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }

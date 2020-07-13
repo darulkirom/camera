@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "11449c92_890c5d09",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1407350
+      },
+      "writtenOn": "2020-07-13T02:04:32Z",
+      "side": 1,
+      "message": "patch #3 -\u003e patch #4 changes:\n1. change DisableCameraReceiver to SetActivitiesCameraReceiver\n2. change the comments to below:\n// Enable or disable camera-related activities based on \"camera hal\" in every boot up.\n// This receiver runs when BOOT_COMPLETED intent is received.\n3. remove needCameraActivity, add component_state which according CHECK_BACK_CAMERA_ONLY/hasCamera/hasBackCamera\n4. use component_state directly in setComponent",
+      "revId": "a90321cb8d3e9b54dd0c2498c99ca5c08c5ef877",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

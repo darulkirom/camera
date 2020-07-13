@@ -33,6 +33,23 @@
       "revId": "05025c58b281ab3ddb0ad56fd119f0b26dea6f60",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "778448b9_e87123ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-07-13T17:08:21Z",
+      "side": 1,
+      "message": "It would be much appreciated if one of you could take a look at this change to see if there is any feedback on it from a Camera perspective, Shanthanu, Shuzhen or Emilian. 😊",
+      "revId": "05025c58b281ab3ddb0ad56fd119f0b26dea6f60",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

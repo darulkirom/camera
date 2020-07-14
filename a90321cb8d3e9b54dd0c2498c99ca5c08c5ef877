@@ -120,6 +120,24 @@
       "revId": "a90321cb8d3e9b54dd0c2498c99ca5c08c5ef877",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67775f9b_5cf416df",
+        "filename": "src/com/android/camera/SetActivitiesCameraReceiver.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1407350
+      },
+      "writtenOn": "2020-07-14T00:52:25Z",
+      "side": 1,
+      "message": "Hi Colin,\n\nI just keep keep below patch logic: CHECK_BACK_CAMERA_ONLY decide whether system have back camera or have any camera(back or front).\nIf we want to change it, maybe you can add another CL.\ncommit 4ba6702369a2ed496b7c6c9244f1ecf7b56380cb\nAuthor: henryhsu \u003chenryhsu@google.com\u003e\nDate:   Tue Mar 8 10:50:25 2016 +0800\n\n    Fix camera facing by querying characteristics\n\n    Query facing from characteristics instead of hard coded.\n    Some code like camera_id_icons still assume the back camera id is\n    0. But these codes are only used when switching cameras. If there\n    is only one camera (either front or back), camera app works fine.\n    If there are two cameras, back camera id should be 0.\n\n    Also changing CHECK_BACK_CAMERA_ONLY to false because some devices\n    only have a front camera.",
+      "parentUuid": "149c8333_32a28172",
+      "revId": "a90321cb8d3e9b54dd0c2498c99ca5c08c5ef877",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }

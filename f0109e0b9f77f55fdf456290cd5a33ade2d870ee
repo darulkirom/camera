@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "178d4d6c_76c35141",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1141048
+      },
+      "writtenOn": "2020-07-14T23:12:28Z",
+      "side": 1,
+      "message": "Not entirely familiar with this code base but some general comments, is the patch intended to be used as debug/workaround for the progress bar or the final solution?\nThe patch should be okay in the former case but we can probably remove the commented out code as well as parts or all of the extra logs in the latter case.",
+      "revId": "f0109e0b9f77f55fdf456290cd5a33ade2d870ee",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

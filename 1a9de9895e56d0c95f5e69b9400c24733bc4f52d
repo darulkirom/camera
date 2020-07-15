@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "978d78ec_58c38db0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1407350
+      },
+      "writtenOn": "2020-07-15T11:26:02Z",
+      "side": 1,
+      "message": "I am not sure why it block at auto test.\nI also push this patch to android10 as below:\nhttps://android-review.googlesource.com/c/platform/packages/apps/Camera2/+/1363636",
+      "revId": "1a9de9895e56d0c95f5e69b9400c24733bc4f52d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

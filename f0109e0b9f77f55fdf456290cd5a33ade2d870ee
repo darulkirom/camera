@@ -16,6 +16,24 @@
       "revId": "f0109e0b9f77f55fdf456290cd5a33ade2d870ee",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b0603c02_77514800",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-07-15T15:48:38Z",
+      "side": 1,
+      "message": "Thanks for the review! I removed most of added logging and the commented out code in the CameraActivity as this patch is intended to be more of a final solution. If you think it would be wise to include some comments about the removal of the progress bar display in the code where I made that change I\u0027d be happy to do that.",
+      "parentUuid": "178d4d6c_76c35141",
+      "revId": "f0109e0b9f77f55fdf456290cd5a33ade2d870ee",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

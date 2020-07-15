@@ -1,0 +1,11 @@
+Open-Source-Licensing+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Code-Review+1: Emilian Peev <epeev@google.com>
+Code-Review+2: Raman Tenneti <rtenneti@google.com>
+Autosubmit+1: Raman Tenneti <rtenneti@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Wed, 15 Jul 2020 23:02:57 +0000
+Reviewed-on: https://android-review.googlesource.com/c/platform/packages/apps/Camera2/+/1356041
+Project: platform/packages/apps/Camera2
+Branch: refs/heads/master

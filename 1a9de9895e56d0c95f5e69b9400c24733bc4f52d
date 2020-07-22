@@ -33,6 +33,23 @@
       "revId": "1a9de9895e56d0c95f5e69b9400c24733bc4f52d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "809766a7_3b26e976",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-07-22T23:41:24Z",
+      "side": 1,
+      "message": "There is an internal change to packages/apps/Camera2/src/com/android/camera/DisableCameraReceiver.java. Let me cherry pick (CP) that change to AOSP and we could try this CL after my CP lands.",
+      "revId": "1a9de9895e56d0c95f5e69b9400c24733bc4f52d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

@@ -50,6 +50,24 @@
       "revId": "1a9de9895e56d0c95f5e69b9400c24733bc4f52d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dd64f446_f0183b5b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1407350
+      },
+      "writtenOn": "2020-07-23T00:49:32Z",
+      "side": 1,
+      "message": "ok. cool. please let me known after you pick it into aosp.",
+      "parentUuid": "809766a7_3b26e976",
+      "revId": "1a9de9895e56d0c95f5e69b9400c24733bc4f52d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

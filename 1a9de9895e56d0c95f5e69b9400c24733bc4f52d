@@ -68,6 +68,23 @@
       "revId": "1a9de9895e56d0c95f5e69b9400c24733bc4f52d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e3f0a20c_a98f7865",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-07-24T20:05:35Z",
+      "side": 1,
+      "message": "Hi Shuzhen Wang,\n  Can you please rebase and merge the changes from the following CL and update this CL? Thanks\n\n https://android-review.googlesource.com/c/platform/packages/apps/Camera2/+/1372323",
+      "revId": "1a9de9895e56d0c95f5e69b9400c24733bc4f52d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

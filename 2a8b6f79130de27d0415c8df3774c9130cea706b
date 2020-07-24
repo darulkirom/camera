@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e0dd8eb2_50b118ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1060513
+      },
+      "writtenOn": "2020-07-24T18:51:58Z",
+      "side": 1,
+      "message": "Is there a particular reason we want to port this to AOSP master? Besides Android TV, most of other Android devices probably doesn\u0027t support external camera today.\n(I am not against merging this, just wondering are there more external cameras in the market now?)",
+      "revId": "2a8b6f79130de27d0415c8df3774c9130cea706b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

@@ -16,6 +16,24 @@
       "revId": "2a8b6f79130de27d0415c8df3774c9130cea706b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "73f66253_f72569e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-07-24T20:03:50Z",
+      "side": 1,
+      "message": "The following CL renames the file that is submitted in this CL. The following CL fails to merge and pass presubmit verify in git_master. \n\nhttps://android-review.googlesource.com/c/platform/packages/apps/Camera2/+/1359204",
+      "parentUuid": "e0dd8eb2_50b118ee",
+      "revId": "2a8b6f79130de27d0415c8df3774c9130cea706b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

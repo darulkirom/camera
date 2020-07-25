@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "1c238fb8_7bd5a6f3",
+        "filename": "src/com/android/camera/DisableCameraReceiver.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2020-07-25T01:04:59Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1357f0ca_049f02ee",
+      "revId": "2d164eb9030b70c6cdedead06c91e1734f4672c1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "11dbbb90_1ad17df1",
         "filename": "src/com/android/camera/DisableCameraReceiver.java",
         "patchSetId": 3

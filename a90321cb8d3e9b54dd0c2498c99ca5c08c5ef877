@@ -138,6 +138,24 @@
       "revId": "a90321cb8d3e9b54dd0c2498c99ca5c08c5ef877",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a5ff089_3c5daaf2",
+        "filename": "src/com/android/camera/SetActivitiesCameraReceiver.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1407350
+      },
+      "writtenOn": "2020-07-25T06:33:11Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "67775f9b_5cf416df",
+      "revId": "a90321cb8d3e9b54dd0c2498c99ca5c08c5ef877",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }

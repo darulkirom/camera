@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dfe241f2_55a00b32",
+        "filename": "src/com/android/camera/processing/imagebackend/TaskConvertImageToRGBPreview.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 205,
+      "author": {
+        "id": 1359095
+      },
+      "writtenOn": "2020-07-28T17:16:47Z",
+      "side": 1,
+      "message": "Two indefinite articles doesn\u0027t really make sense. I might suggest replacing \"an\" with \"repeating\" or \"arbitrary\", or I might suggest deleting \", an\" entirely.\n\nBelow as well.",
+      "range": {
+        "startLine": 205,
+        "startChar": 55,
+        "endLine": 205,
+        "endChar": 69
+      },
+      "revId": "e172bac98e3a0e80a1b824993fe74dd2b9a0cfc2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}

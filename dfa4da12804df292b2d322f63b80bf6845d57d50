@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d7b82c7d_43a27563",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1130869
+      },
+      "writtenOn": "2020-07-30T09:05:28Z",
+      "side": 1,
+      "message": "Hi, google friends, what\u0027s the staus for the change, thanks for your time.",
+      "revId": "dfa4da12804df292b2d322f63b80bf6845d57d50",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

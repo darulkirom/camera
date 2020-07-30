@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa141294_6302b151",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1407350
+      },
+      "writtenOn": "2020-07-30T07:23:22Z",
+      "side": 1,
+      "message": "Hi Google friends,\nyou have +2 for this CL, however you still not merge this patch.\nany issue does the Robot meet? ",
+      "revId": "49a4d3fe8500f4cb0906ab6ea2e69b466839ac0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

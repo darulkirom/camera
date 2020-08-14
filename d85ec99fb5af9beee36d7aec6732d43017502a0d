@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "22f19170_dffda0c6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1691576
+      },
+      "writtenOn": "2020-08-14T21:47:12Z",
+      "side": 1,
+      "message": "This change is to fix b/163082488. I verified locally on my Sargo device this change addresses the issue. I\u0027m happy to make any changes/improvements that might be desired!",
+      "revId": "d85ec99fb5af9beee36d7aec6732d43017502a0d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}

@@ -16,6 +16,24 @@
       "revId": "49a4d3fe8500f4cb0906ab6ea2e69b466839ac0a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "10ee4bc0_30cb2fd5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1141048
+      },
+      "writtenOn": "2020-08-20T16:49:30Z",
+      "side": 1,
+      "message": "I think the patch needs to be rebased due to merge conflict on tip. With that said, a similar change is already merged in:\nhttps://android-review.googlesource.com/c/platform/packages/apps/Camera2/+/1199737\n\non the same master branch",
+      "parentUuid": "fa141294_6302b151",
+      "revId": "49a4d3fe8500f4cb0906ab6ea2e69b466839ac0a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }

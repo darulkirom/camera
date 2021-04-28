@@ -16,6 +16,23 @@
       "message": "Interestingly, the +2 doesn\u0027t carry between patchset.",
       "revId": "f9242479e8332777df43b1cacd6220dae82124de",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f405235d_8f42c68f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2021-04-28T20:01:41Z",
+      "side": 1,
+      "message": "Patchset 2 LGTM.",
+      "revId": "f9242479e8332777df43b1cacd6220dae82124de",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

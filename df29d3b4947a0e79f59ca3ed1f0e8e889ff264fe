@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "edc0a324_a90a2eac",
+        "filename": "src/com/android/camera/VideoModule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2021-04-28T18:28:51Z",
+      "side": 0,
+      "message": "Remove this comment as well.",
+      "revId": "df29d3b4947a0e79f59ca3ed1f0e8e889ff264fe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

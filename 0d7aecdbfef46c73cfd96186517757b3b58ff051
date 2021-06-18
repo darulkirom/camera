@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9b32e2a_20cf89a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1130869
+      },
+      "writtenOn": "2021-06-18T05:50:07Z",
+      "side": 1,
+      "message": "Hi, google friends, I just uploaded a patch related to camera record. Would you please have a check. Thanks for your time.\n",
+      "revId": "0d7aecdbfef46c73cfd96186517757b3b58ff051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

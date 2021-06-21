@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "b7e86770_8fa0049c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2021-06-21T16:04:30Z",
+      "side": 1,
+      "message": "In general, the commit text subject should describe \"what\", and the body paragraph describes \"why\" and \"how\". Can you please swap the order of the 2 sentences?\n\nsapce -\u003e space.",
+      "revId": "0d7aecdbfef46c73cfd96186517757b3b58ff051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "c9b32e2a_20cf89a2",
@@ -14,6 +31,54 @@
       "writtenOn": "2021-06-18T05:50:07Z",
       "side": 1,
       "message": "Hi, google friends, I just uploaded a patch related to camera record. Would you please have a check. Thanks for your time.\n",
+      "revId": "0d7aecdbfef46c73cfd96186517757b3b58ff051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1fce95e0_a5c3d9b4",
+        "filename": "src/com/android/camera/VideoModule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1164,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2021-06-21T16:04:30Z",
+      "side": 1,
+      "message": "\u003e Lines longer than 100 characters should be wrapped to improve readability; see https://source.android.com/setup/contribute/code-style#limit-line-length for more details.\n\nPlease fix.",
+      "parentUuid": "73c2c63b_0fe86da6",
+      "range": {
+        "startLine": 1164,
+        "startChar": 0,
+        "endLine": 1164,
+        "endChar": 107
+      },
+      "revId": "0d7aecdbfef46c73cfd96186517757b3b58ff051",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e39901d_b8946da0",
+        "filename": "src/com/android/camera/VideoModule.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1176,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2021-06-21T16:04:30Z",
+      "side": 1,
+      "message": "\u003e Lines longer than 100 characters should be wrapped to improve readability; see https://source.android.com/setup/contribute/code-style#limit-line-length for more details.\n\nPlease fix.",
+      "parentUuid": "702513bb_cd44a544",
+      "range": {
+        "startLine": 1176,
+        "startChar": 0,
+        "endLine": 1176,
+        "endChar": 111
+      },
       "revId": "0d7aecdbfef46c73cfd96186517757b3b58ff051",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }

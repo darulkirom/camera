@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f334ff0_66a175cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1130869
+      },
+      "writtenOn": "2021-10-29T07:37:48Z",
+      "side": 1,
+      "message": "When \"Settings\" UI is protrait, \"Picture Mode\" UI is landscape, may meet the issue.\n\n--------- beginning of crash\n10-24 16:45:40.714  1556  1556 E AndroidRuntime: FATAL EXCEPTION: main\n10-24 16:45:40.714  1556  1556 E AndroidRuntime: Process: com.android.camera2, PID: 1556\n10-24 16:45:40.714  1556  1556 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method \u0027boolean com.android.camera.settings.SettingsManager.isSet(java.lang.String, java.lang.String)\u0027 on a null object reference\n10-24 16:45:40.714  1556  1556 E AndroidRuntime:        at com.android.camera.app.CameraAppUI.onChangeCamera(CameraAppUI.java:1252)\n10-24 16:45:40.714  1556  1556 E AndroidRuntime:        at com.android.camera.CaptureModule$17$1.run(CaptureModule.java:1436)\n10-24 16:45:40.714  1556  1556 E AndroidRuntime:        at android.os.Handler.handleCallback(Handler.java:938)\n10-24 16:45:40.714  1556  1556 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:99)\n10-24 16:45:40.714  1556  1556 E AndroidRuntime:        at android.os.Looper.loopOnce(Looper.java:201)\n10-24 16:45:40.714  1556  1556 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:288)\n10-24 16:45:40.714  1556  1556 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:7842)\n10-24 16:45:40.714  1556  1556 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)\n10-24 16:45:40.714  1556  1556 E AndroidRuntime:        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)\n10-24 16:45:40.714  1556  1556 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)",
+      "revId": "dda79962dbb94bda65e1aafdd92218339f36a674",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

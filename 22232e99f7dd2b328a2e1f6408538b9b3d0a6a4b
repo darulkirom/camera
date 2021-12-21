@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cb5fb627_0cff1124",
+        "filename": "src/com/android/camera/util/ApiHelper.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1043473
+      },
+      "writtenOn": "2021-12-21T00:47:32Z",
+      "side": 0,
+      "message": "Should we delete this, or is it better to set HAS_RENDERSCRIPT to be false?",
+      "revId": "22232e99f7dd2b328a2e1f6408538b9b3d0a6a4b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

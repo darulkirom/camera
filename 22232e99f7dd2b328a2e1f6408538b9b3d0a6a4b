@@ -16,6 +16,24 @@
       "message": "Should we delete this, or is it better to set HAS_RENDERSCRIPT to be false?",
       "revId": "22232e99f7dd2b328a2e1f6408538b9b3d0a6a4b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "051935fa_732b6506",
+        "filename": "src/com/android/camera/util/ApiHelper.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1338311
+      },
+      "writtenOn": "2021-12-21T01:10:14Z",
+      "side": 0,
+      "message": "I didn\u0027t see this variable is not used in aosp-master. As it is possible it\ncould be used by outside AOSP, set this to false. Thanks Amith.\n\nDone",
+      "parentUuid": "cb5fb627_0cff1124",
+      "revId": "22232e99f7dd2b328a2e1f6408538b9b3d0a6a4b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01ba3b30_0aa21724",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1121338
+      },
+      "writtenOn": "2022-03-17T16:41:58Z",
+      "side": 1,
+      "message": "Assuming we\u0027ve done some basic testing such as taking pictures / recording video. Thanks!",
+      "revId": "261a61689c7c0e8262ce4694dafb7c9c6850abbf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

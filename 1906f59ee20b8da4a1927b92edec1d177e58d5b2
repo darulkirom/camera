@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5e5f6da_dabed1b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1815899
+      },
+      "writtenOn": "2022-04-11T19:45:37Z",
+      "side": 1,
+      "message": "I\u0027m not sure if this is intentional.\nThere is a small difference with these getting the WindowManager:\nAndroidServices.instance().provideWindowManager()\nvs\nactivity.getWindowManager().getDefaultDisplay()",
+      "revId": "1906f59ee20b8da4a1927b92edec1d177e58d5b2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

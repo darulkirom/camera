@@ -16,6 +16,23 @@
       "message": "I\u0027m not sure if this is intentional.\nThere is a small difference with these getting the WindowManager:\nAndroidServices.instance().provideWindowManager()\nvs\nactivity.getWindowManager().getDefaultDisplay()",
       "revId": "1906f59ee20b8da4a1927b92edec1d177e58d5b2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "347018fa_421a2826",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1815899
+      },
+      "writtenOn": "2022-05-17T18:04:18Z",
+      "side": 1,
+      "message": "Good to merge?",
+      "revId": "1906f59ee20b8da4a1927b92edec1d177e58d5b2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

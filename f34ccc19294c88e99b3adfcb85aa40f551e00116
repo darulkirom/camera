@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd909ac5_dd7a3458",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2022-05-24T20:33:19Z",
+      "side": 1,
+      "message": "This is a trivial cherry-pick from tm-dev to aosp master. ",
+      "revId": "f34ccc19294c88e99b3adfcb85aa40f551e00116",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

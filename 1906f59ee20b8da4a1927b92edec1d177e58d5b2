@@ -33,6 +33,23 @@
       "message": "Good to merge?",
       "revId": "1906f59ee20b8da4a1927b92edec1d177e58d5b2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b79f5d5_07d420fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1815899
+      },
+      "writtenOn": "2022-06-21T15:29:23Z",
+      "side": 1,
+      "message": "Bump",
+      "revId": "1906f59ee20b8da4a1927b92edec1d177e58d5b2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

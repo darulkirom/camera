@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "08ecff20_7e7a4b38",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1121338
+      },
+      "writtenOn": "2022-08-02T01:03:32Z",
+      "side": 1,
+      "message": "Would it better to explicitly stop the thread . If we add a flag, we\u0027re not executing the contents of the run function, but we\u0027re still actually running the thread ?",
+      "range": {
+        "startLine": 34,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 62
+      },
+      "revId": "137574afda2e90e1ff17b1d22c3b25a6589c92cd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6fe85645_6dd3eca5",
+        "filename": "src/com/android/camera/CaptureModule.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1410,
+      "author": {
+        "id": 1121338
+      },
+      "writtenOn": "2022-08-02T01:03:32Z",
+      "side": 1,
+      "message": "since onCameraOpened, the execution of the runnable passed in MainThread.execute() and onSurfaceTextureDestroyed can potentially take place on different threads, we should be using some sort of synchronization ?",
+      "range": {
+        "startLine": 1410,
+        "startChar": 22,
+        "endLine": 1410,
+        "endChar": 42
+      },
+      "revId": "137574afda2e90e1ff17b1d22c3b25a6589c92cd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

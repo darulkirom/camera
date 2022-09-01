@@ -24,6 +24,9 @@ import com.android.camera.debug.Log;
 import com.android.camera.one.v2.camera2proxy.ImageProxy;
 import com.google.common.base.Preconditions;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 import java.nio.ByteBuffer;
 import java.util.List;
 
@@ -224,6 +227,8 @@ public class JpegUtilNative {
         final List<ImageProxy.Plane> planeList = img.getPlanes();
         Preconditions.checkState(planeList.size() == NUM_PLANES);
 
+        dumpYUVFile("/sdcard/Android/data/com.android.camera2/files/input.yuv", img);
+
         ByteBuffer[] planeBuf = new ByteBuffer[NUM_PLANES];
         int[] pixelStride = new int[NUM_PLANES];
         int[] rowStride = new int[NUM_PLANES];
@@ -272,4 +277,34 @@ public class JpegUtilNative {
 
         return numBytesWritten;
     }
+
+    private static void dumpPlane(FileOutputStream outStream, ImageProxy.Plane plane) throws IOException {
+            ByteBuffer buffer = null;
+            buffer = plane.getBuffer();
+            byte[] data = new byte[buffer.remaining()];
+            buffer.get(data);
+            outStream.write(data);
+    }
+
+    public static void dumpYUVFile(String fileName, ImageProxy image) {
+        FileOutputStream outStream;
+        try {
+            Log.v(TAG, "output will be saved as " + fileName);
+            outStream = new FileOutputStream(fileName);
+
+            // Read image data
+            List<ImageProxy.Plane> planes = image.getPlanes();
+
+            dumpPlane(outStream, planes.get(0));
+            dumpPlane(outStream, planes.get(1));
+            if (planes.get(1).getPixelStride() == 1) {
+                dumpPlane(outStream, planes.get(2));
+            }
+
+            outStream.close();
+        } catch (IOException ioe) {
+            throw new RuntimeException("failed writing data to file " + fileName, ioe);
+        }
+    }
+
 }

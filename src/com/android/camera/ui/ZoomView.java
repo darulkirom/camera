@@ -112,9 +112,6 @@ public class ZoomView extends ImageView {
             Rect region = new Rect();
             visibleInImage.round(region);
 
-            // Make sure region to decode is inside the image.
-            region.intersect(0, 0, imageSize.x - 1, imageSize.y - 1);
-
             if (region.width() == 0 || region.height() == 0) {
                 Log.e(TAG, "Invalid size for partial region. Region: " + region.toString());
                 return null;

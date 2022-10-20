@@ -46,6 +46,30 @@
       },
       "revId": "22740eaed80993c765ea3cdebbef132392bae93d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0c2e1137_e8a32556",
+        "filename": "src/com/android/camera/processing/imagebackend/TaskCompressImageToJpeg.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 1476392
+      },
+      "writtenOn": "2022-10-20T21:16:58Z",
+      "side": 1,
+      "message": "I understand. Just asking if we should use the minimum quality of all (non-back-facing) cameras available.",
+      "parentUuid": "a681f873_7c6fac0d",
+      "range": {
+        "startLine": 435,
+        "startChar": 12,
+        "endLine": 435,
+        "endChar": 77
+      },
+      "revId": "22740eaed80993c765ea3cdebbef132392bae93d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [

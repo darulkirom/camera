@@ -1,5 +1,29 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc578fb0_38713017",
+        "filename": "src/com/android/camera/processing/imagebackend/TaskCompressImageToJpeg.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 1476392
+      },
+      "writtenOn": "2022-10-20T20:58:57Z",
+      "side": 1,
+      "message": "Are there use-cases where there are multiple front cameras? Should we return the |min| of all?",
+      "range": {
+        "startLine": 435,
+        "startChar": 12,
+        "endLine": 435,
+        "endChar": 77
+      },
+      "revId": "22740eaed80993c765ea3cdebbef132392bae93d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {

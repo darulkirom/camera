@@ -70,6 +70,30 @@
       },
       "revId": "22740eaed80993c765ea3cdebbef132392bae93d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb34884c_fc1e7267",
+        "filename": "src/com/android/camera/processing/imagebackend/TaskCompressImageToJpeg.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 1890231
+      },
+      "writtenOn": "2022-10-20T21:45:28Z",
+      "side": 1,
+      "message": "This module processes it for the first found (either back- or front-facing) camera for now. Perhaps, it should get a current-active cameraID or a preferred camera ID using KEY_CAMERA_ID.\n\nI think it is a separate issue anyway.",
+      "parentUuid": "0c2e1137_e8a32556",
+      "range": {
+        "startLine": 435,
+        "startChar": 12,
+        "endLine": 435,
+        "endChar": 77
+      },
+      "revId": "22740eaed80993c765ea3cdebbef132392bae93d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [

@@ -22,6 +22,30 @@
       },
       "revId": "22740eaed80993c765ea3cdebbef132392bae93d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a681f873_7c6fac0d",
+        "filename": "src/com/android/camera/processing/imagebackend/TaskCompressImageToJpeg.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 435,
+      "author": {
+        "id": 1890231
+      },
+      "writtenOn": "2022-10-20T21:13:16Z",
+      "side": 1,
+      "message": "Based on the implementation of getJpegEncodingQualityParameter(int), all cameras seem to be enumerated from 0.\nhttps://android.googlesource.com/platform/frameworks/base/+/refs/heads/master/media/java/android/media/CameraProfile.java#60",
+      "parentUuid": "cc578fb0_38713017",
+      "range": {
+        "startLine": 435,
+        "startChar": 12,
+        "endLine": 435,
+        "endChar": 77
+      },
+      "revId": "22740eaed80993c765ea3cdebbef132392bae93d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [

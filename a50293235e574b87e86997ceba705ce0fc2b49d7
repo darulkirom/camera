@@ -52,6 +52,24 @@
       "parentUuid": "9f0b119a_15dff6a6",
       "revId": "a50293235e574b87e86997ceba705ce0fc2b49d7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84e53a03_f0362ff6",
+        "filename": "src/com/android/camera/ui/ZoomView.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1535516
+      },
+      "writtenOn": "2022-11-09T21:23:00Z",
+      "side": 0,
+      "message": "Sorry, I misread the function. It actually does change the original rect, which makes me wonder why it\u0027s @CheckResult. I\u0027ve removed that change from this cl and will investigate more first.",
+      "parentUuid": "13fe6d00_9cb083a9",
+      "revId": "a50293235e574b87e86997ceba705ce0fc2b49d7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

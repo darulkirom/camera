@@ -16,6 +16,24 @@
       "message": "Out of curiosity, why isn\u0027t this needed any more?",
       "revId": "a50293235e574b87e86997ceba705ce0fc2b49d7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f0b119a_15dff6a6",
+        "filename": "src/com/android/camera/ui/ZoomView.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1535516
+      },
+      "writtenOn": "2022-11-09T20:58:14Z",
+      "side": 0,
+      "message": "This is [android.graphics.Rect.intersect()](https://cs.android.com/android/platform/superproject/+/master:frameworks/base/graphics/java/android/graphics/Rect.java;l\u003d540;drc\u003da9d72c8ac33888c4151055ca4dbaf63381282770). That intersect method returns true/false if one rect intersects another. So if you ignore the return value, it does nothing.",
+      "parentUuid": "470be16e_0ed79822",
+      "revId": "a50293235e574b87e86997ceba705ce0fc2b49d7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

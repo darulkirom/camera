@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "470be16e_0ed79822",
+        "filename": "src/com/android/camera/ui/ZoomView.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2022-11-09T20:55:00Z",
+      "side": 0,
+      "message": "Out of curiosity, why isn\u0027t this needed any more?",
+      "revId": "a50293235e574b87e86997ceba705ce0fc2b49d7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

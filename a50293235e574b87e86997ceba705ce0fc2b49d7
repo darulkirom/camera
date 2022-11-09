@@ -34,6 +34,24 @@
       "parentUuid": "470be16e_0ed79822",
       "revId": "a50293235e574b87e86997ceba705ce0fc2b49d7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13fe6d00_9cb083a9",
+        "filename": "src/com/android/camera/ui/ZoomView.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1092583
+      },
+      "writtenOn": "2022-11-09T21:09:35Z",
+      "side": 0,
+      "message": "Ah.. I see! Thanks for the clarification!",
+      "parentUuid": "9f0b119a_15dff6a6",
+      "revId": "a50293235e574b87e86997ceba705ce0fc2b49d7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

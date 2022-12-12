@@ -1,5 +1,23 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22a885ff_cccee9ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1060751
+      },
+      "writtenOn": "2022-12-12T20:58:36Z",
+      "side": 1,
+      "message": "Ankit, did you have any details on why the launcher is showing two camera icons? Is there another activity in the manifest w/ launcher cateogry?",
+      "revId": "766a5fe51a0138b8566e76905d441207bafa03df",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ],
   "submitRequirementResults": [
     {
       "submitRequirement": {

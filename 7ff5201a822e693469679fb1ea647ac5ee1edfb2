@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a410882d_368aa30a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1139038
+      },
+      "writtenOn": "2023-01-27T21:29:43Z",
+      "side": 1,
+      "message": "It\u0027s very minor and low priority!",
+      "revId": "7ff5201a822e693469679fb1ea647ac5ee1edfb2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da8c219d_7ad9cff6",
+        "filename": "src/com/android/camera/CameraActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 2404,
+      "author": {
+        "id": 1139038
+      },
+      "writtenOn": "2023-01-27T21:29:43Z",
+      "side": 1,
+      "message": "For reference.",
+      "range": {
+        "startLine": 2399,
+        "startChar": 0,
+        "endLine": 2404,
+        "endChar": 0
+      },
+      "revId": "7ff5201a822e693469679fb1ea647ac5ee1edfb2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

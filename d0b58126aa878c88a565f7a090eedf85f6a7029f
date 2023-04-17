@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d0c4af4_beeca677",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1957790
+      },
+      "writtenOn": "2023-04-17T08:18:48Z",
+      "side": 1,
+      "message": "can fix the crash below:\n--------- beginning of crash\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: FATAL EXCEPTION: main\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: Process: com.android.camera2, PID: 1727\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: java.lang.ArithmeticException: divide by zero\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat com.android.camera.ui.AnimatedCircleDrawable.map(AnimatedCircleDrawable.java:138)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat com.android.camera.ui.AnimatedCircleDrawable.animateToSmallRadius(AnimatedCircleDrawable.java:86)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat com.android.camera.ui.BottomBar.animateToVideoStop(BottomBar.java:506)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat com.android.camera.app.CameraAppUI.animateBottomBarToVideoStop(CameraAppUI.java:1891)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat com.android.camera.VideoModule$11.onStorageUpdateDone(VideoModule.java:1422)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat com.android.camera.CameraActivity$20.onPostExecute(CameraActivity.java:2373)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat com.android.camera.CameraActivity$20.onPostExecute(CameraActivity.java:2358)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat android.os.AsyncTask.finish(AsyncTask.java:771)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat android.os.AsyncTask.-$$Nest$mfinish(Unknown Source:0)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:788)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat android.os.Handler.dispatchMessage(Handler.java:106)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat android.os.Looper.loopOnce(Looper.java:201)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat android.os.Looper.loop(Looper.java:288)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat android.app.ActivityThread.main(ActivityThread.java:7884)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat java.lang.reflect.Method.invoke(Native Method)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)\n03-31 18:07:42.901  1727  1727 E AndroidRuntime: \tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)",
+      "revId": "d0b58126aa878c88a565f7a090eedf85f6a7029f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

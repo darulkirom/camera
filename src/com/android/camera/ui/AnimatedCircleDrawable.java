@@ -22,6 +22,7 @@ import android.graphics.ColorFilter;
 import android.graphics.Paint;
 import android.graphics.PixelFormat;
 import android.graphics.drawable.Drawable;
+import androidx.core.math.MathUtils;
 
 import com.android.camera.util.Gusterpolator;
 
@@ -135,6 +136,9 @@ public class AnimatedCircleDrawable extends Drawable {
      * @return The mapped value.
      */
     private static int map(int x, int in_min, int in_max, int out_min, int out_max) {
+        if (in_max == in_min) {
+            return MathUtils.clamp(x, out_min, out_max);
+        }
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
 

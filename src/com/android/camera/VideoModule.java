@@ -1260,13 +1260,16 @@ public class VideoModule extends CameraModule
         } else {
             Log.w(TAG, "Video duration <= 0 : " + duration);
         }
-        mCurrentVideoValues.put(Video.Media.SIZE, mVideoFileDescriptor.getStatSize());
-        mCurrentVideoValues.put(Video.Media.DURATION, duration);
-        mCurrentVideoValues.put(Video.Media.IS_PENDING, 0);
-        getServices().getMediaSaver().addVideo(mCurrentVideoUri,
-                mCurrentVideoValues, mOnVideoSavedListener);
-        logVideoCapture(duration);
-        mCurrentVideoValues = null;
+
+        if (mCurrentVideoValues != null) {
+            mCurrentVideoValues.put(Video.Media.SIZE, mVideoFileDescriptor.getStatSize());
+            mCurrentVideoValues.put(Video.Media.DURATION, duration);
+            mCurrentVideoValues.put(Video.Media.IS_PENDING, 0);
+            getServices().getMediaSaver().addVideo(mCurrentVideoUri,
+                    mCurrentVideoValues, mOnVideoSavedListener);
+            logVideoCapture(duration);
+            mCurrentVideoValues = null;
+        }
     }
 
     private void deleteVideoFile(String fileName) {

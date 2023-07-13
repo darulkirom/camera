@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3dad30f1_05f33ff7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1957790
+      },
+      "writtenOn": "2023-07-13T03:46:45Z",
+      "side": 1,
+      "message": "the patch here shows that if location was not saved, remove the init location Tags.\nI think this is reasonable, otherwise the default init would cause certain situations or users to judge that GPS is present even though there is no valid information in it.\nanother related patch see:\nhttps://android-review.googlesource.com/c/platform/packages/apps/Camera2/+/2655881",
+      "revId": "8b65d5418792e35386d1fa7b04b82832473c94f9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

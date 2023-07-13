@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "596a7070_e96ef1ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1957790
+      },
+      "writtenOn": "2023-07-13T03:10:44Z",
+      "side": 1,
+      "message": "CTS_Verifier: Camera Intents test will fail at 3 of 5 when test with Camera2.\nwhich will reports:\n07-05 05:27:00.592 8750 8750 D CameraIntents: Should not contain location information",
+      "revId": "56cb76bff5d472ab092527a7c66fad0611820c3b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

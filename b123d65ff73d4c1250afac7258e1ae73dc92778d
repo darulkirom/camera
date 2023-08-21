@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e5882f3_5eccb983",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2026226
+      },
+      "writtenOn": "2023-08-21T05:26:22Z",
+      "side": 1,
+      "message": "Hi,\n\nI has cherry-pick this commit and verified it, My Emulator screen crashed after I playing video recorded. Please check",
+      "revId": "b123d65ff73d4c1250afac7258e1ae73dc92778d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5834548c_8b1c77d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1957790
+      },
+      "writtenOn": "2023-09-13T08:09:09Z",
+      "side": 1,
+      "message": "When issue happened, we can only see \u0027retake_button\u0027 and \u0027cancel_button\u0027 after taking pictures, \u0027done_button\u0027 disappeared.",
+      "revId": "8461f705ed3574e1ae369c83f66690084fef4879",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

@@ -16,6 +16,24 @@
       "message": "nit: remove this empty line.",
       "revId": "e375d97fd1f3a71808df3eb17673d4f53dc054d9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "959f186c_0ebadb37",
+        "filename": "tests/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1307893
+      },
+      "writtenOn": "2023-12-19T03:37:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a123c96_4bee3568",
+      "revId": "e375d97fd1f3a71808df3eb17673d4f53dc054d9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

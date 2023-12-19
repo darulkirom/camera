@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a123c96_4bee3568",
+        "filename": "tests/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1317851
+      },
+      "writtenOn": "2023-12-19T03:35:43Z",
+      "side": 1,
+      "message": "nit: remove this empty line.",
+      "revId": "e375d97fd1f3a71808df3eb17673d4f53dc054d9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

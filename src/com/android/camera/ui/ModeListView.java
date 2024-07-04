@@ -1734,7 +1734,9 @@ public class ModeListView extends FrameLayout
     public void onWindowVisibilityChanged(int visibility) {
         super.onWindowVisibilityChanged(visibility);
         if (visibility != VISIBLE) {
-            mCurrentStateManager.getCurrentState().hide();
+            if (mCurrentStateManager.getCurrentState() != null) {
+                mCurrentStateManager.getCurrentState().hide();
+            }
         }
     }
 

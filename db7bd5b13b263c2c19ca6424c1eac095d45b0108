@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e060df3_429372c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1957790
+      },
+      "writtenOn": "2024-07-04T10:50:37Z",
+      "side": 1,
+      "message": "Actually, the crash will always exist in this case:\nthe reproduce step is:\nOpen Camera2 and preview -\u003e tap Recent -\u003e tap menu(choose an apk and open) -\u003e tap Recent -\u003e tap Split -\u003e Choose Camera2\n\ncrash info as below:\n\nAndroidRuntime: Caused by: android.view.InflateException: Binary XML file line #18 in com.android.camera2:layout/activity_main: Attempt to invoke virtual method \u0027void com.android.camera.ui.ModeListView$ModeListState.hide()\u0027 on a null object reference\nAndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method \u0027void com.android.camera.ui.ModeListView$ModeListState.hide()\u0027 on a null object reference\nAndroidRuntime: \tat com.android.camera.ui.ModeListView.onWindowVisibilityChanged(ModeListView.java:1748)\nAndroidRuntime: \tat android.view.View.dispatchAttachedToWindow(View.java:22274)\nAndroidRuntime: \tat android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3494)\nAndroidRuntime: \tat android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3501)\nAndroidRuntime: \tat android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:3501)\nAndroidRuntime: \tat android.view.ViewGroup.addViewInner(ViewGroup.java:5328)\nAndroidRuntime: \tat android.view.ViewGroup.addView(ViewGroup.java:5114)\nAndroidRuntime: \tat android.view.ViewGroup.addView(ViewGroup.java:5086)\nAndroidRuntime: \tat android.view.LayoutInflater.inflate(LayoutInflater.java:579)\nAndroidRuntime: \tat android.view.LayoutInflater.inflate(LayoutInflater.java:462)\nAndroidRuntime: \tat android.view.LayoutInflater.inflate(LayoutInflater.java:413)\nAndroidRuntime: \tat com.android.internal.policy.PhoneWindow.setContentView(PhoneWindow.java:517)\nAndroidRuntime: \tat android.app.Activity.setContentView(Activity.java:3699)\nAndroidRuntime: \tat com.android.camera.CameraActivity.onCreateTasks(CameraActivity.java:1507)\nAndroidRuntime: \tat com.android.camera.util.QuickActivity.onCreate(QuickActivity.java:114)\nAndroidRuntime: \tat android.app.Activity.performCreate(Activity.java:8767)\nAndroidRuntime: \tat android.app.Activity.performCreate(Activity.java:8745)\nAndroidRuntime: \tat android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1519)\nAndroidRuntime: \tat android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3928)",
+      "revId": "db7bd5b13b263c2c19ca6424c1eac095d45b0108",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

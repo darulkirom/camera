@@ -33,6 +33,23 @@
       "message": "More detailed information (video of issue reproduction and crash log), link:\nhttps://drive.google.com/drive/folders/1YGL_9B7uh4H__oMdT3rRzCh9cH0PNNDP",
       "revId": "db7bd5b13b263c2c19ca6424c1eac095d45b0108",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b9b3a4a_bdc71eed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1957790
+      },
+      "writtenOn": "2024-07-10T05:08:34Z",
+      "side": 1,
+      "message": "Presubmit finished: 1 failed, 20 skipped, 52 passed.\n\n\u003d\u003d\u003d\nhi guys, the failure should not due to my changes, please help to confirm again, and better to merge ASAP. Thanks!",
+      "revId": "db7bd5b13b263c2c19ca6424c1eac095d45b0108",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

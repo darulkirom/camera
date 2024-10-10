@@ -50,6 +50,23 @@
       "message": "Presubmit finished: 1 failed, 20 skipped, 52 passed.\n\n\u003d\u003d\u003d\nhi guys, the failure should not due to my changes, please help to confirm again, and better to merge ASAP. Thanks!",
       "revId": "db7bd5b13b263c2c19ca6424c1eac095d45b0108",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ffa0ba69_f0456616",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1957790
+      },
+      "writtenOn": "2024-10-10T05:34:33Z",
+      "side": 1,
+      "message": "hi guys, can you trigger the Presubmit-Verified again, is there anything still need to check?",
+      "revId": "db7bd5b13b263c2c19ca6424c1eac095d45b0108",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

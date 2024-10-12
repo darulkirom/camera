@@ -67,6 +67,23 @@
       "message": "hi guys, can you trigger the Presubmit-Verified again, is there anything still need to check?",
       "revId": "db7bd5b13b263c2c19ca6424c1eac095d45b0108",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0d3876a_5c94d7af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1957790
+      },
+      "writtenOn": "2024-10-12T03:19:01Z",
+      "side": 1,
+      "message": "Please help to merge the patch ASAP, or the Presubmit-Verified may expire later~，\nThanks!",
+      "revId": "db7bd5b13b263c2c19ca6424c1eac095d45b0108",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

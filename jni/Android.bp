@@ -36,7 +36,10 @@ cc_library_shared {
         },
     },
     // for including the jni.h file
-    header_libs: ["jni_headers"],
+    header_libs: [
+        "jni_headers",
+        "native_headers",
+    ],
 }
 
 // JpegUtil
@@ -67,5 +70,8 @@ cc_library_shared {
         },
     },
     // for including the jni.h file
-    header_libs: ["jni_headers"],
+    header_libs: [
+        "jni_headers",
+        "native_headers",
+    ],
 }

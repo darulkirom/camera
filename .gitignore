@@ -11,3 +11,4 @@ gen/
 
 # ignore OS X metadata
 .DS_Store
+/build
